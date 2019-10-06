@@ -1,0 +1,1729 @@
+=====IP=====
+IP: 192.168.2.171 Bcast
+ 
+=====SRC DIRECTORY====
+/mnt/disk/bran/8.1_ts108_jh_only/mt8167_o1.mp5_v1
+ 
+=====CONFIGS====
+DDR: 
+	COMMON_LP3_168BALL
+LCM: 
+	P101KDA_AF4
+CAMERA:
+	gc2385mipi_raw gc2386mipi_raw gc030amipi_raw gc2355mipiraw gc5005mipiraw
+TP: 
+	
+Sensor: 
+	STK8312(G-sensor): n
+	STK8BA50(G-sensor): y
+Battery: 
+	
+Vibrator: n
+ 
+eMMC MAX CLK: 
+    max-frequency = <200000000>; max-frequency = <100000000>; max-frequency = <50000000>;
+ 
+=====GIT BRANCH====
+GMS:
+* 8.1_201809_jh_N10
+ 
+main:
+* ts108_64_jh
+ 
+=========Project Inheritance relationship ========
+
+base on: tb8167p3_64_bsp/ em_ts108@driver.only.8167
+
+=========GIT LOG ========
+ 
+#############################################################
+===== main ====
+vvvvv
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05"
+    
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.84 (Update Security Patch Level to 2018-10-05)"
+    
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.84 (Update Security Patch Level to 2018-10-05)
+    ALPS04109399		[Google Security Patch][CVE-2018-9502][CVE-2018-9503]ID Vulnerability in Bluetooth
+    ALPS04109394		[Google Security Patch][CVE-2018-9497]RCE Vulnerability in libmpeg2
+    ALPS04109395		[Google Security Patch][CVE-2018-9498]RCE Vulnerability in libskia
+    ALPS04109397		[Google Security Patch][CVE-2018-9499]ID Vulnerability in libmediadrm
+    ALPS04109390		[Google Security Patch][CVE-2018-9492]EoP Vulnerability in Activity Manager Service
+    ALPS04109391		[Google Security Patch][CVE-2018-9493]ID Vulnerability in Download Manager
+    ALPS03342098		[Google Security Patch][CVE-2017-0676]RCE Vulnerability in Media framework
+    ALPS04109409		[Google Security Patch][CVE-2018-9510]ID Vulnerability in Bluetooth
+    ALPS04126432		Revise ARM assembly function declare for kernel thumb-2 enabled
+    ALPS04109406		[Google Security Patch][CVE-2018-9508]ID Vulnerability in Bluetooth
+    ALPS04109407		[Google Security Patch][CVE-2018-9509]ID Vulnerability in Bluetooth
+    ALPS04116334		The video has noise when press Home key
+    ALPS04109388		[Google Security Patch][CVE-2018-9490]EoP Vulnerability in libpac
+    ALPS04081328		enable hdmi
+    ALPS04115711		"[CtsCameraTestCases]android.hardware.cts.CameraTest#testPreviewFpsRange fail
+    [CtsCameraTestCases]android.hardware.cts.CameraTest#testPreviewFpsRange, 1 case failed.]"
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS00458646		Update information for internal regular release
+    ALPS04129557		[Makefile] [Patchback: Feature Option] CKRQ-00016472
+    ALPS04121087		CtsSecurityTestCases--android.security.cts.StagefrightTest#testStagefright_cve_2018_9423 fail
+    ALPS04109416		[Google Security Patch]Update Security Patch Level to 2018-10-05
+    ALPS04115472		"CTS 测试失败
+    CTS fail patch"
+    ALPS04109414		[Google Security Patch][CVE-2018-9514]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04122574		fix drc gain drop issue
+    ALPS04078317		For Mesh Feature update
+    
+    补丁编码: dongming@20181009105011
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05
+    ALPS04109398		[Google Security Patch][CVE-2018-9501]EoP Vulnerability in SetupWizard
+    ALPS04109399		[Google Security Patch][CVE-2018-9502][CVE-2018-9503]ID Vulnerability in Bluetooth
+    ALPS04101422		"Google要求更改Keymaster version binding行為
+    Change keymaster version binding behavior by Google's request"
+    ALPS04109391		[Google Security Patch][CVE-2018-9493]ID Vulnerability in Download Manager
+    ALPS03879438		ov5645 sensor porting
+    ALPS04103323		"修复pinctrl debug 命令显示和操作无效的问题
+    fix pinctrl debug command show@operating invalid issue"
+    ALPS04057410		"8167使用decouple  mode
+    make 8167 platform always decouple"
+    ALPS04094568		"增加MT8167 ethernet支持
+    Add MT8167 ethernet support"
+    ALPS04102170		Add SPM 26M request API for WOL feature
+    ALPS04089702		fix some dsi issue on mt8173
+    ALPS04109400		[Google Security Patch][CVE-2018-9504]RCE Vulnerability in Bluetooth
+    ALPS04109402		[Google Security Patch][CVE-2018-9505]ID Vulnerability in Bluetooth
+    ALPS04109403		[Google Security Patch][CVE-2018-9506]ID Vulnerability in Bluetooth
+    ALPS04109405		[Google Security Patch][CVE-2018-9507]ID Vulnerability in Bluetooth
+    ALPS04077394		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS04109041		"兼容Android P的make mntlimage命令
+    compatile with android p for make mntlimage"
+    ALPS04109389		[Google Security Patch][CVE-2018-9491]RCE Vulnerability in NDK
+    ALPS04077975		[Google Security Advisory]Security Vulnerability: [CVE-2018-5390] Possibility of remote denial of service
+    ALPS04109387		[Google Security Patch][CVE-2018-9476]EoP Vulnerability in Bluetooth
+    ALPS04106606		testStagefright_bug_38487564 fail
+    ALPS04109385		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04100722		Add notification channel in fmradio
+    ALPS04109382		[Google Security Patch][CVE-2017-13283]RCE Vulnerability in Bluetooth
+    ALPS04077990		[Google Security Advisory]Security Vulnerability: [CVE-2018-5391] Possibility of remote denial of service
+    ALPS04106966		remove no needed /proc/sysram to avoid security issue
+    ALPS04091479		fix Flashlight: Strobe and Flashlight cannot work
+    ALPS04108597		"优化MP3低功耗播放
+    Low power mp3 playback optimaze"
+    ALPS04106885		add low power support
+    ALPS04111076		"同步最新的WIFI驱动代码和固件
+    Sync the newest wifi driver and fw"
+    ALPS03778951		remove unused node
+    ALPS04109415		[Google Security Patch][CVE-2018-9515]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04109414		[Google Security Patch][CVE-2018-9514]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04078317		For Mesh Feature update
+    ALPS04094757		android.media.cts.DecodeEditEncodeTest#testVideoEdit720p failed
+    ALPS00458646		Update information for internal regular release
+    
+    补丁编码: dongming@20180918133845
+
+
+    Revert "[st18c10bnnxx][battery] 再次调整电池曲线，保证放电到1%关机时电压cv低于3450mv，这样再开机时会提示低电图标"
+    
+
+
+    [common][battery] 修改CV充电超市时间为6h,防止充不满电池
+    补丁编码；rui.liu@20180930154835
+
+
+    [common][battery] 解决关机充电情况下，充到96%就不在充电，无法充到100%
+    问题现象:插充电器充电充到96%后就充不上去了
+
+
+    [common][mt8167]解决首次刷机ATA无法检测keybox状态
+    补丁编码: dongming@20180928165216
+
+
+    [st18c10bnnxx][wifi] 解决wifi深度休眠电流大的问题
+    问题现象:打开wifi 深度休眠后电流为12ma
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05"
+    
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05
+    ALPS04109398		[Google Security Patch][CVE-2018-9501]EoP Vulnerability in SetupWizard
+    ALPS04109399		[Google Security Patch][CVE-2018-9502][CVE-2018-9503]ID Vulnerability in Bluetooth
+    ALPS04101422		"Google要求更改Keymaster version binding行為
+    Change keymaster version binding behavior by Google's request"
+    ALPS04109391		[Google Security Patch][CVE-2018-9493]ID Vulnerability in Download Manager
+    ALPS03879438		ov5645 sensor porting
+    ALPS04103323		"修复pinctrl debug 命令显示和操作无效的问题
+    fix pinctrl debug command show@operating invalid issue"
+    ALPS04057410		"8167使用decouple  mode
+    make 8167 platform always decouple"
+    ALPS04094568		"增加MT8167 ethernet支持
+    Add MT8167 ethernet support"
+    ALPS04102170		Add SPM 26M request API for WOL feature
+    ALPS04089702		fix some dsi issue on mt8173
+    ALPS04109400		[Google Security Patch][CVE-2018-9504]RCE Vulnerability in Bluetooth
+    ALPS04109402		[Google Security Patch][CVE-2018-9505]ID Vulnerability in Bluetooth
+    ALPS04109403		[Google Security Patch][CVE-2018-9506]ID Vulnerability in Bluetooth
+    ALPS04109405		[Google Security Patch][CVE-2018-9507]ID Vulnerability in Bluetooth
+    ALPS04077394		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS04109041		"兼容Android P的make mntlimage命令
+    compatile with android p for make mntlimage"
+    ALPS04109389		[Google Security Patch][CVE-2018-9491]RCE Vulnerability in NDK
+    ALPS04077975		[Google Security Advisory]Security Vulnerability: [CVE-2018-5390] Possibility of remote denial of service
+    ALPS04109387		[Google Security Patch][CVE-2018-9476]EoP Vulnerability in Bluetooth
+    ALPS04106606		testStagefright_bug_38487564 fail
+    ALPS04109385		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04100722		Add notification channel in fmradio
+    ALPS04109382		[Google Security Patch][CVE-2017-13283]RCE Vulnerability in Bluetooth
+    ALPS04077990		[Google Security Advisory]Security Vulnerability: [CVE-2018-5391] Possibility of remote denial of service
+    ALPS04106966		remove no needed /proc/sysram to avoid security issue
+    ALPS04091479		fix Flashlight: Strobe and Flashlight cannot work
+    ALPS04108597		"优化MP3低功耗播放
+    Low power mp3 playback optimaze"
+    ALPS04106885		add low power support
+    ALPS04111076		"同步最新的WIFI驱动代码和固件
+    Sync the newest wifi driver and fw"
+    ALPS03778951		remove unused node
+    ALPS04109415		[Google Security Patch][CVE-2018-9515]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04109414		[Google Security Patch][CVE-2018-9514]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04078317		For Mesh Feature update
+    ALPS04094757		android.media.cts.DecodeEditEncodeTest#testVideoEdit720p failed
+    ALPS00458646		Update information for internal regular release
+    
+    补丁编码: dongming@20180918133845
+
+
+    Revert "Revert "[st18c10bnnxx][common][wifi]  解决和入 [mtk-patch]alps-mp-o1.mp5-V2.65.1 补丁后，wifi打不开""
+    
+
+
+    Revert "[st18c10bnnxx][common][wifi]  解决和入 [mtk-patch]alps-mp-o1.mp5-V2.65.1 补丁后，wifi打不开"
+    
+
+
+    [common][battery][ntc]  解决NTC温度变化响应慢
+    补丁编码:rui.liu@20180918191024
+    问题现象：当外界温度变化时，NTC显示的温度不能及时响应变化
+
+
+    [common][battery][NTC]
+    1.解决NTC高温50-60之前温度不准，根据测试数据适当调节
+    2.修改CEC逻辑，解决开机第一次充满电后，cec_battery_full_flag置1后，始终为1，当电量不是100时
+      再插充电器时，也会进入深度休眠，从而导致充电时电量不更新
+
+
+    [st18c10bnnxx][T卡] 设置T卡的最大频率为100MZ
+    补丁编码:rui.liu@20180913171124
+
+
+    [COMM][MT6630 BT]解决BT 认证 RF TEST 功率超标
+    补丁编码:zhenlin.zhang@201809110935
+    问题现象:BT 认证 RF TEST 多个频点功率超标
+    注意事项:
+    	如何确认BT POWER LEVEL 修改成功==》》
+    	1,使用Engineer mode APK, 找到BT 对应的page
+    	2,Setting 关闭BT, 再打开BT, 在MTKLOG 的 mainlog 中查找
+    	[BT]: mtk_fw_cfg: [BDAddr 00-00-46-66-30-01][Voice 60 00][Codec 63 10 00 00]
+    	[Radio 07 80 00 06 07 07]<-<-<-<-<------------
+    	[Sleep 03 40 1f 40 1f 00 04][BtFTR 80 00]
+    	[TxPWOffset ff ff ff][CoexAdjust 00 00 00 00 00 00]
+    	[Radio_ext 00 00][TxPWOffset_ext 00 00 00]
+    	其中的Radio 中的 第0个数值，第4个数值，第5个数值 为BT 的POWER LEVEL 值
+
+
+    [st18c10bnnxx][NTC]  调整温度曲线，解决5度以下读取温度比实际温度高5度
+    补丁编码:rui.liu@20180911103127
+    问题现象:5度以下读取温度比实际温度高5度
+
+
+    [st18c10bnnxx][NTC] 提问提示并且停止充电漏修改
+    补丁编码:rui.liu@20180910135437
+
+
+    [em_ts108_64mme][common] 解决NTC 没有低温提示
+    补丁编码:rui.liu@20180910110123
+
+
+    [common][SystemUI]解决因添加attwifibn自动连接问题引起的wifi吞吐量变差问题
+    补丁编码: dongming@20180907173954
+
+
+    [st18c10bnnxx][T卡] 按照硬件测试要求 修改T卡最大频率为50Mhz,驱动电流为6mA
+    补丁编码:rui.liu@20180907115046
+
+
+    [common][usb] PO_VCC  改为深度休眠才断电
+    补丁编码:rui.liu@201809061832
+
+
+    [st18c10bnnxx][battery] 再次调整电池曲线，保证放电到1%关机时电压cv低于3450mv，这样再开机时会提示低电图标
+    补丁编码:rui.liu@20180905202214
+    问题现象:放电到0%触发系统关机时CV大于3550(开机电压)，关机后还能再次开机，不提示低电图标
+
+
+    [common] 168ball LPDDR3 频率从1600改为1333
+    补丁编码:rui.liu@20180905183425
+
+
+    [st18c10bnnxx][recovery] 解决同时按住 音量加 + POWER KEY无法进入recovery模式
+    补丁编码:rui.liu@20180904154631
+    问题现象:同时是按住 音量加 + POWER KEY无法进入recovery模式，先按POWERY KEY再按音量加可以进入
+
+
+    [st18c10bnnxx][common][wifi]  解决和入 [mtk-patch]alps-mp-o1.mp5-V2.65.1 补丁后，wifi打不开
+    补丁编码:rui.liu@20180904114535
+    说明:此修改是根据MTK CR上提供的补丁修改的
+
+
+    [common][mtk-patch]解决编译错误
+    以下提交漏提交文件导致编译错误
+    
+           [common][mtk-patch]alps-mp-o1.mp5-V2.72
+    
+    补丁编码: dongming@20180831154906
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.72
+    ALPS04076878		[Google Security Patch][CVE-2018-9485]ID Vulnerability in Bluetooth
+    ALPS03629618		set encoder bitrate
+    ALPS04082922		Support Bootvideo feature
+    ALPS03879438		ov5645 sensor porting
+    ALPS04077379		"使用55k SRAMROM来给audio抓数据从而进入deepdile
+    reuse 55k SRAMROM feature for deepidle to save power"
+    ALPS04090351		shut down/reboot display abnormay
+    ALPS04094543		[Makefile] [Add: Feature Option][Option Name: MTK_SUPPORT_MTKBOOTVIDEO] CKRQ-00016189
+    ALPS04083160		add autok corner check
+    ALPS04067121		OP1SoundRecorder pause-stop crash
+    ALPS04076859		[Google Security Patch][CVE-2018-9469]EoP Vulnerability in Package Manager
+    ALPS04076857		[Google Security Patch][CVE-2018-9468]ID Vulnerability in DownloadManager
+    ALPS04076855		[Google Security Patch][CVE-2018-9467]EoP Vulnerability in Core framework
+    ALPS04076853		[Google Security Patch][CVE-2018-9466][CVE-2018-9472]RCE Vulnerability in libxml/libxml2
+    ALPS04076870		[Google Security Patch][CVE-2018-9478][CVE-2018-9479]EoP Vulnerability in Bluetooth
+    ALPS04076872		[Google Security Patch][CVE-2018-9480][CVE-2018-9481][CVE-2018-9482]ID Vulnerability in Bluetooth
+    ALPS04076874		[Google Security Patch][CVE-2018-9483]ID Vulnerability in Bluetooth
+    ALPS04076875		[Google Security Patch][CVE-2018-9484]ID Vulnerability in Bluetooth
+    ALPS04070029		"升级GPU库
+    update GPU prebuild so"
+    ALPS04080231		fix CTS fail
+    ALPS04081631		"播放 32bit float pcm wave文件， 存在噪音
+    playing ieee float wav file, have noise"
+    ALPS04085505		gts fail
+    ALPS04070518		Device happen KE when do suspend/resume and wifi on/off test
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS04081169		"no
+    fix build fail"
+    ALPS04069071		"AIV8167SM3_BSP EEPROM config 更新
+    AIV8167SM3_BSP EEPROM config update"
+    ALPS00458646		Update information for internal regular release
+    ALPS04088932		[Google Security Patch][CVE-2017-0705]EoP Vulnerability in Wi-Fi driver (Device Specific)
+    ALPS04076884		[Google Security Patch][CVE-2018-9488]EoP Vulnerability in crashdump
+    ALPS04076881		[Google Security Patch][CVE-2018-9486]ID Vulnerability in Bluetooth
+    ALPS04076883		[Google Security Patch][CVE-2018-9487]DoS Vulnerability in VPN
+    ALPS04076849		[Google Security Patch][CVE-2018-9440]DoS Vulnerability in libstagefright
+    ALPS04081689		"因為audio-hal被人殺掉, 所以連帶audioserver會收到訊息並使自己NE
+    False alarm of audioserver NE"
+    ALPS03778951		remove unused node
+    ALPS04076842		[Google Security Patch][CVE-2018-9347]DoS Vulnerability in libstagefright
+    ALPS04076845		[Google Security Patch][CVE-2018-9411]RCE Vulnerability in mediacas
+    ALPS04094545		[Makefile] [Add: Feature Option][Option Name: MTK_IN_HOUSE_TEE_DEV] CKRQ-00016190
+    ALPS04076847		[Google Security Patch][CVE-2018-9427]RCE Vulnerability in libstagefright
+    ALPS04076861		[Google Security Patch][CVE-2018-9470]EoP Vulnerability in neven
+    ALPS04076867		[Google Security Patch][CVE-2018-9475]EoP Vulnerability in Bluetooth
+    ALPS04076866		[Google Security Patch][CVE-2018-9474]EoP Vulnerability in MediaPlayer
+    ALPS04076864		[Google Security Patch][CVE-2018-9471]EoP Vulnerability in Location service
+    ALPS04080162		sync CarBTDemo code
+    ALPS04076869		[Google Security Patch][CVE-2018-9477]EoP Vulnerability in Settings app
+    ALPS04078317		For Mesh Feature update
+    ALPS04085307		"修复eMMC不稳定问题
+    Fix eMMC not stable"
+    
+    补丁编码: dongming@20180830201643
+    
+    Conflicts:
+    	kernel-4.4/sound/soc/mediatek/mt8167/mt8167-afe-pcm.c
+
+
+    Revert "Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1""
+    
+
+
+    [st18c10bnnxx][battery] 优化电池曲线：90%-100%充电时间太长
+    补丁编码:rui.liu@20180831193326
+    问题现象:90%-100%充电时间达到2小时左右
+
+
+    Revert "[COMMON][MT8167,THERMAL]解决MT8167 使用PHOTO等软解码APK播放视频出现画面卡顿"
+    
+
+
+    [st18c10bnnxx][common]  增加不同充电类型下，亮灭屏的充电电流大小控制
+    补丁编码:rui.liu@2018083113043
+     |==========================================|
+     | CHR_SET     ||   LCD ON  ||   LCD OFF    |
+     |==========================================|
+     |DC/pogo DC   || CHR_SET=H ||   CHR_SET=L  |
+     |        PC   || CHR_SET=L ||   CHR_SET=L  |
+     |    USB DC   || CHR_SET=H ||   CHR_SET=L  |
+     |==========================================|
+
+
+    [st18c10bnnxx][common] 优化霍尔开关在快速合上或打开时，有时无响应
+    补丁编码:rui.liu@20180830203825
+    问题现象:霍尔开关快速合上再快速打开，此时屏幕不亮。
+    注意事项:无
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1"
+    
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1"
+    
+
+
+    [st18c10bnnxx] 调整wifi clock的驱动电流为4mA
+    补丁编码:rui.liu@20180827201124
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.65.1
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03629618		set encoder bitrate
+    ALPS04039802		"使用MT3337会卡在开机动画无法开机
+                         Boot up fail w/ MT3337"
+    ALPS04072428		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS03981461		8167 o porting usb camera
+    ALPS03778951		remove unused node
+    ALPS04040741		"Skip from copying preopted files if device is undecrypted.
+                         After applies issue 78613232 patch (create symlink in init.r_c),
+                         we found device boots to home screen fail."
+    ALPS04058705		[Google Security Patch][CVE-2016-6684]ID Vulnerability in kernel components (Device Specific)
+    ALPS04080009		"解决NAND平台无法启动的问题
+                         Fix NAND platform boot up failed issue"
+    ALPS04037773		"使用audio tuning tool的最新V2版本连接MT8167失败
+                         8167 O1  audio_tuning_tool v2 connection failed"
+    ALPS04065185		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS04043469		"为MT8167平台提供用户层应用程序，用于微调26M clock
+                         Provide userspace app for 8167 26M clock trimming"
+    ALPS04057410		"8167使用decouple  mode
+                         make 8167 platform always decouple"
+    ALPS00458646		Update information for internal regular release
+    ALPS04049500		"[Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         [Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         limit filesystem stacking depth"
+    ALPS04046628		Implement HFP client feature for 8167 connect with 6627 and 7668.
+    ALPS04061428		disable MTK_MULTIWINDOW_SUPPORT FO
+    ALPS04058480		Add mtee secure api interface
+    ALPS04061461		Add drmserver permission for ephemeral apps, so they can use MediaExtractor too
+    ALPS04060610		enable use fastboot flash image on macos
+    
+    补丁编码: dongming@20180820140454
+
+
+    [common]解决dorelease脚步发布的软件checksum不正确，以及无法正确支持MT8167平台问题
+    补丁编码: dongming@20180827115902
+
+
+    [st18c10bnnxx][wifi]  修改wifi clock驱动电流，解决EMC测试无法通过
+    补丁编码:rui.liu@20180827091341
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1"
+    
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1"
+    
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.65.1
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03629618		set encoder bitrate
+    ALPS04039802		"使用MT3337会卡在开机动画无法开机
+                         Boot up fail w/ MT3337"
+    ALPS04072428		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS03981461		8167 o porting usb camera
+    ALPS03778951		remove unused node
+    ALPS04040741		"Skip from copying preopted files if device is undecrypted.
+                         After applies issue 78613232 patch (create symlink in init.r_c),
+                         we found device boots to home screen fail."
+    ALPS04058705		[Google Security Patch][CVE-2016-6684]ID Vulnerability in kernel components (Device Specific)
+    ALPS04080009		"解决NAND平台无法启动的问题
+                         Fix NAND platform boot up failed issue"
+    ALPS04037773		"使用audio tuning tool的最新V2版本连接MT8167失败
+                         8167 O1  audio_tuning_tool v2 connection failed"
+    ALPS04065185		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS04043469		"为MT8167平台提供用户层应用程序，用于微调26M clock
+                         Provide userspace app for 8167 26M clock trimming"
+    ALPS04057410		"8167使用decouple  mode
+                         make 8167 platform always decouple"
+    ALPS00458646		Update information for internal regular release
+    ALPS04049500		"[Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         [Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         limit filesystem stacking depth"
+    ALPS04046628		Implement HFP client feature for 8167 connect with 6627 and 7668.
+    ALPS04061428		disable MTK_MULTIWINDOW_SUPPORT FO
+    ALPS04058480		Add mtee secure api interface
+    ALPS04061461		Add drmserver permission for ephemeral apps, so they can use MediaExtractor too
+    ALPS04060610		enable use fastboot flash image on macos
+    
+    补丁编码: dongming@20180820140454
+
+
+    Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.65.1"
+    
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.65.1
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03629618		set encoder bitrate
+    ALPS04039802		"使用MT3337会卡在开机动画无法开机
+                         Boot up fail w/ MT3337"
+    ALPS04072428		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS03981461		8167 o porting usb camera
+    ALPS03778951		remove unused node
+    ALPS04040741		"Skip from copying preopted files if device is undecrypted.
+                         After applies issue 78613232 patch (create symlink in init.r_c),
+                         we found device boots to home screen fail."
+    ALPS04058705		[Google Security Patch][CVE-2016-6684]ID Vulnerability in kernel components (Device Specific)
+    ALPS04080009		"解决NAND平台无法启动的问题
+                         Fix NAND platform boot up failed issue"
+    ALPS04037773		"使用audio tuning tool的最新V2版本连接MT8167失败
+                         8167 O1  audio_tuning_tool v2 connection failed"
+    ALPS04065185		"谷歌邮件应用共享联系人失败
+                         Fail to share contact in Gmail"
+    ALPS04043469		"为MT8167平台提供用户层应用程序，用于微调26M clock
+                         Provide userspace app for 8167 26M clock trimming"
+    ALPS04057410		"8167使用decouple  mode
+                         make 8167 platform always decouple"
+    ALPS00458646		Update information for internal regular release
+    ALPS04049500		"[Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         [Google Security Patch][CVE-2014-9922]Elevation of privilege vulnerability in kernel file system (device specific)
+                         limit filesystem stacking depth"
+    ALPS04046628		Implement HFP client feature for 8167 connect with 6627 and 7668.
+    ALPS04061428		disable MTK_MULTIWINDOW_SUPPORT FO
+    ALPS04058480		Add mtee secure api interface
+    ALPS04061461		Add drmserver permission for ephemeral apps, so they can use MediaExtractor too
+    ALPS04060610		enable use fastboot flash image on macos
+    
+    补丁编码: dongming@20180820140454
+    
+    Conflicts:
+    	vendor/mediatek/proprietary/bootable/bootloader/lk/dev/lcm/kd070d5450nha6_rgb_dpi/kd070d5450nha6_rgb_dpi.c
+
+
+    [st18c10bnnxx][hall] 优化霍尔开关
+    补丁编码:rui.liu@20180823210025
+
+
+    [common][factory] ATA支持检测GMS信息
+    补丁编码: dongming@20180823163824
+
+
+    [st18c10bnnxx][hall] 增加霍尔开关
+    补丁编码:rui.liu@20180823193622
+
+
+    [st18c10bnnxx][lcm] 调整屏幕CLOCK为480，可以过EMI
+    补丁编码:rui.liu@20180823172833
+
+
+    [st18c10bnnxx]1.解决不能进入fastboot模式问题
+    补丁编码：kelvin.yuan@2018082312
+
+
+    [COMMON][recovery]  解决进入recovery后，选择 Reboot to bootloader 无法进入fastboot 模式
+    补丁编码:rui.liu@20180823111132
+
+
+    [st18c10bnnxx][camera] 优化gc2385mipi_raw效果
+    补丁编码:rui.liu@20180822174431
+
+
+    [COMMON][CEC] 不配置CONFIG_MTK_CHARGER_CEC_AUTH 编译报错
+    补丁编码:rui.liu@20180822163822
+
+
+    [COMMON][st18c10bnnxx] 1.由于使用外部充电IC，所以关闭充9停1机制
+                           2.增加gpio9 控制外部充电IC充电的打开与截至,所以NTC的高温低温保护机制生效
+                           3.增加CEC功能
+    补丁编码:rui.liu@20180821195433
+    注意事项:要使用CEC功能和NTC的高温低温保护电池功能,需要硬件上使用gpio9控制外部充电IC的使能脚
+             软件上需要配置:kernel-4.4/arch/arm64/configs/[项目]_[debug]_defconfig
+                            CONFIG_MTK_CHARGER_CEC_AUTH=y (目前没有配置，需要硬件支持才配置)
+
+
+    [common]解决factory English语言设置时编译报错
+    补丁编码: dongming@20180809155625
+
+
+    [st18c10bnnxx][common][SD] 解决部分T卡无法识别
+    补丁编码:rui.liu@20180821143252
+
+
+    
+    Conflicts:
+    	device/emdoor/st18c10bnnxx/ProjectConfig.mk
+    	device/mediatek/common/device.mk
+    	kernel-4.4/arch/arm64/configs/st18c10bnnxx_debug_defconfig
+    	kernel-4.4/arch/arm64/configs/st18c10bnnxx_defconfig
+
+
+    [st18c10bnnxx]1.项目添加SecureBoot，注：烧录需用对应的加密DA烧录
+    [st18c10bnnxx]2.fingerprint用releasekey
+
+
+    [st18c10bnnxx] 还原之前修改导致的T卡读写速度慢
+    补丁编码:rui.liu@20180820192046
+
+
+    [COMMON][battery] 添加低电提示logo(>=3400)
+    补丁编码:rui.liu@20180820190923
+
+
+    [st18c10bnnxx][TP] 增加TP  ATA 测试功能，解决无法过滤不良TP
+    [补丁编码]:rui.liu@20180820110631
+
+
+    [common][N7]解决隐藏attwifibn无法自动连接
+    补丁编码 ：angle.luo@20180816 75942
+
+
+    [common][N7][SystemUI]改善因实现attwifibn wifi自动连接问题，导致开WIFI休眠电流过高
+    补丁编码:angle.luo@20180816 64934
+
+
+    [n7][common]预设wifi ap：attwifibn
+    补丁编码:angle.luo@20180816 43959
+
+
+    [st18c10bnnxx][camera] 合入客户提供的gc2385+gc2386 摄像头效果文件
+    补丁编码:rui.liu@20180816172143
+
+
+    [st18c10bnnxx][battery] 优化ZL30132145-6000mAh电池曲线; 1. 98%~100%充电时间过长  2. 4%电量触发低电关机
+    补丁编码:rui.liu@20180816165122
+
+
+    [st18c10bnnxx][battery] 京华N10带NTC功能，所以要打开BAT_ON(检测电池是否存在)功能。
+    补丁编码:rui.liu@20180816104322
+
+
+    [COMMON][LK] 提高开机电压;解决低电关机后，再手动开机亮屏后又低电关机影响客户体验
+    补丁编码:rui.liu@20180815174144
+
+
+    [COMMON][kernel] 1.解决上层电量（UI_SOC）与底层电量（SOC）同步慢
+                     2.解决ZCV开机获取一次后，不再变化;(ZCV = vol_bat + mtk_imp_tracking)
+    补丁编码:rui.liu@20180815173423
+
+
+    [st18c10bnnxx]---版本号：BNTV650_v1.0.1_20180815
+
+
+    [st18c10bnnxx]---luch项目只保留st18c10bnnxx
+
+
+    [st18c10bnnxx][battery]  更改低电关机接口，上次的关机接口无作用，无法关机
+    补丁编码:rui.liu@20180815115014
+
+
+    [COMMON][MT8167,THERMAL]解决MT8167 使用PHOTO等软解码APK播放视频出现画面卡顿
+    补丁编码:zhenlin.zhang@20180815094830
+    问题现象:使用PHOTO等软解码APK播放视频出现画面卡顿
+    注意事项:
+        [1]查询指令
+        adb shell cat /proc/driver/thermal/tzcpu
+        [2]查询结果
+        [tscpu_read]6
+        trip_0=117000 0 mtktscpu-sysrst
+        trip_1=110000 0 mtk-cl-shutdown00
+        trip_2=105000 0 cpu02
+        trip_3=100000 0 cpu01
+        trip_4=95000  0 cpu00
+        trip_5=63000  0 no-cooler
+        trip_6=45000  0 no-cooler
+        trip_7=35000  0 no-cooler
+        trip_8=25000  0 no-cooler
+        trip_9=15000  0 no-cooler
+        interval=250
+
+
+    [st18c10bnnxx][battery] 1.导入客户提供的带ntc数据的电池曲线GSP30134138_6300mAH
+                            2.按客户要求修改NTC功能
+                            3.增加低电检测关机机制，关机电压在dtsi中设置为3480mv,提高关机电压防止电池过放
+    补丁编码:rui.liu@20180814205335
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.59
+    ALPS03629618		set encoder bitrate
+    ALPS04040741		"Skip from copying preopted files if device is undecrypted.
+    					After applies issue 78613232 patch (create symlink in init.r_c),
+    					we found device boots to home screen fail."
+    ALPS04032426		"AAudio cts 测试
+    					[CtsNativeMediaAAudioTestCases] SR/AAudioStreamBuilderSamplingRateTest#openStream/384000"
+    ALPS03879438		ov5645 sensor porting
+    ALPS03342098		[Google Security Patch][CVE-2017-0676]RCE Vulnerability in Media framework
+    ALPS04033887		[Makefile] [Add: Feature Option][Option Name: MTK_BT_MESH_SUPPORT] CKRQ-00015811
+    ALPS04020746		MTK CTS workaround removal is MTK documents UI app
+    ALPS04020704		"播放包含MP3的avi文件时发生NE
+    					native exception when play avi which contains mp3"
+    ALPS04015465		"CTS CtsMediaTestCases, android.media.cts.DecodeAccuracyTest, 12项测试失败
+    					CtsMediaTestCases, android.media.cts.DecodeAccuracyTest, 12 cases failed"
+    ALPS04023314		Google Security Patch: [CVE-2017-0630]
+    ALPS04026653		can not enter meta mode after flash image and directly boot to meta mode
+    ALPS04022161		CTS work around solution
+    ALPS04037422		[Makefile] [Patchback: Feature Option] CKRQ-00015824
+    ALPS04020857		Remove useless code that workround for video player cts pass
+    ALPS03979657		Add PQ license control
+    ALPS04023144		sync to lastest WIFI FW
+    ALPS04023140		"修正CTS walk around 改动
+    					Fix CTS walk around change"
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS04019766		"更新生醫芯片相關軟體
+    					Update biosensor related SW"
+    ALPS04031782		thermal: mt8167: don't reset during deep idle
+    ALPS04018425		"For 8173 chip using 8176 load,
+    					need to change core number dynamically."
+    ALPS04004560		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04017457		F2FS:bootup fail after flash gsi image
+    ALPS03998195		LE C/I and receiver selectivity & LE Blocking performance fail
+    ALPS04024891		When HDMI is connected,after Wi-Fi Display is connected with WFD ,system crash
+    ALPS04036088		"没有进行resume suspend动作
+    					There is no resume suspend action"
+    ALPS04017128		Fix GScan scope
+    ALPS04033974		usb port1 probe time is too long
+    ALPS03934378		release policy modification
+    ALPS04024029		Require round cornered search widget for GMS Express Plus device
+    ALPS00458646		Update information for internal regular release
+    
+    补丁编码: dongming@20180806145447
+
+
+    [common] 电池低电进入低电保护充电时，拔出充电器会出现不关机耗干电池现象；
+    [补丁编码]colin@20180810181009
+
+
+                [st18c10bnnxx]解决音量减+power键进入工厂模式，菜单显示为中文现象
+                补丁编码：amanda.wei@20180810104911
+
+
+            [st18c10bnnxx]manufacture改为小写，去掉空格
+            补丁编码：amanda.wei@201808101611
+
+
+        [st18c10bnnxx]去掉某些多余apk
+        补丁编码：amanda.wei@20180810101211
+
+
+    [st18c10bnnxx]添加项目下的systemUI内容
+    补丁编码：amanda.wei@20180810100311
+
+
+    [common]解决Settings中搜索功能无作用问题
+    补丁编码: dongming@20180808202510
+
+
+    [common][ATA]ATA支持NTC, KEYBOX, VCCK(DCDC)测试
+    补丁编码: dongming@20180808103517
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.59
+    ALPS03629618		set encoder bitrate
+    ALPS04040741		"Skip from copying preopted files if device is undecrypted.
+    					After applies issue 78613232 patch (create symlink in init.r_c),
+    					we found device boots to home screen fail."
+    ALPS04032426		"AAudio cts 测试
+    					[CtsNativeMediaAAudioTestCases] SR/AAudioStreamBuilderSamplingRateTest#openStream/384000"
+    ALPS03879438		ov5645 sensor porting
+    ALPS03342098		[Google Security Patch][CVE-2017-0676]RCE Vulnerability in Media framework
+    ALPS04033887		[Makefile] [Add: Feature Option][Option Name: MTK_BT_MESH_SUPPORT] CKRQ-00015811
+    ALPS04020746		MTK CTS workaround removal is MTK documents UI app
+    ALPS04020704		"播放包含MP3的avi文件时发生NE
+    					native exception when play avi which contains mp3"
+    ALPS04015465		"CTS CtsMediaTestCases, android.media.cts.DecodeAccuracyTest, 12项测试失败
+    					CtsMediaTestCases, android.media.cts.DecodeAccuracyTest, 12 cases failed"
+    ALPS04023314		Google Security Patch: [CVE-2017-0630]
+    ALPS04026653		can not enter meta mode after flash image and directly boot to meta mode
+    ALPS04022161		CTS work around solution
+    ALPS04037422		[Makefile] [Patchback: Feature Option] CKRQ-00015824
+    ALPS04020857		Remove useless code that workround for video player cts pass
+    ALPS03979657		Add PQ license control
+    ALPS04023144		sync to lastest WIFI FW
+    ALPS04023140		"修正CTS walk around 改动
+    					Fix CTS walk around change"
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS04019766		"更新生醫芯片相關軟體
+    					Update biosensor related SW"
+    ALPS04031782		thermal: mt8167: don't reset during deep idle
+    ALPS04018425		"For 8173 chip using 8176 load,
+    					need to change core number dynamically."
+    ALPS04004560		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04017457		F2FS:bootup fail after flash gsi image
+    ALPS03998195		LE C/I and receiver selectivity & LE Blocking performance fail
+    ALPS04024891		When HDMI is connected,after Wi-Fi Display is connected with WFD ,system crash
+    ALPS04036088		"没有进行resume suspend动作
+    					There is no resume suspend action"
+    ALPS04017128		Fix GScan scope
+    ALPS04033974		usb port1 probe time is too long
+    ALPS03934378		release policy modification
+    ALPS04024029		Require round cornered search widget for GMS Express Plus device
+    ALPS00458646		Update information for internal regular release
+    
+    补丁编码: dongming@20180806145447
+
+
+                    [st18c10bnnxx]去掉原生music
+                    补丁编码：amanda.wei@2018080900
+
+
+                        [st18c10bnnxx]更新apk
+                        补丁编码：amanda.wei@20180808235811
+
+
+                    [st18c10bnnxx]更新launcher3
+                    补丁编码：amanda.wei@20180808235511
+
+
+                [st18c10bnnxx]使只编译MtkSetting
+                补丁编码：amanda.wei@20180808160511
+
+
+                [st18c10bnnxx]修改时区
+                补丁编码：amanda.wei@20180808160411
+
+
+                [st18c10bnnxx]项目下优化背光调节的反应速度
+                补丁编码：amanda.wei@20180808160311
+
+
+            [st18c10bnnxx]继续添加截屏相关修改
+            补丁编码：amanda.wei@20180808152911
+
+
+    [Common][Secureboot]Secure boot
+        补丁编码：tiexin.xu@20180808092710
+        说明：合入此补丁外，还需根据各自项目进行相关配置，请参考vendor/mediatek/proprietary/scripts/SecureBootCFG.txt
+
+
+    [comm]1.更新api
+    补丁编码：kelvin.yuan@20180808105133
+
+
+    [comm][SoundRecorder]1.过gms需要习惯sdk version
+    补丁编码：kelvin.yuan@20180808105033
+
+
+    [st18c10bnnxx]1.解决keybox烧录问题
+    补丁编码：kelvin.yuan@201808008104722
+
+
+        [st18c10bnnxx]使只编译mtkSystemUI
+        补丁编码：amanda.wei@20180807172911
+
+
+            [st18c10bnnxx]bluetooth-device name下显示蓝牙名
+            补丁编码：amanda.wei@20180807172711
+
+
+        [st18c10bnnxx]解决bootanimation第二部分显示不出来的问题
+        补丁编码：amanda.wei@20180807165811
+
+
+        [st18c10bnnxx]更新apk，增加addappwidget apk
+        补丁编码：amanda.wei@20180807165611
+
+
+    [st18c10bnnxx]中文下去掉mobile data显示
+    补丁编码：amanda.wei@20180807154711
+
+
+                    [st18c10bnnxx]客制化SystemUI
+                    补丁编码：amanda.wei@20180806182011
+
+
+                [st18c10bnnxx]客制化launcher3
+                补丁编码：amanda.wei@20180806163611
+
+
+            [st18c10bnnxx]在settings-system-about tablet-status下，增加三项显示，CPU，RAM，FLASH
+            补丁编码：amanda.wei@20180806163211
+
+
+    [comm]1.mt8167平台不支持wma
+    补丁编码：kelvin.yuan@20180803170922
+
+
+    [comm]1.支持光感应该把相关的permission配上
+    补丁编码：kelvin.yuan@20180803170122
+
+
+    [st18c10bnnxx]1.项目不支持陀螺仪，去掉相关配置
+    补丁编码：kelvin.yuan@20180803165833
+
+
+    [st18c10bnnxx]1.固定fingerprint
+    补丁编码:kelvin.yuan@20180803165328
+
+
+        [st18c10bnnxx]去掉Setting-System-About tablet下的Custom build version选项
+        补丁编码：amanda.wei@20180801174011
+
+
+        [st18c10bnnxx]移除Setting-Network&Internet下的Tethering界面
+        补丁编码：amanda.wei@20180801173711
+
+
+    [st18c10bnnxx]预置客户书签和主页
+    补丁编码：amanda.wei@20180801154211
+    
+    Conflicts:
+    	device/emdoor/st18c7bnn/device.mk
+
+
+    [st18c10bnnxx][GMS]1.参考过gms项目修改
+    补丁编码：kelvin.yuan@20180731172711
+
+
+    [st18c10bnnxx]1.基于em_ts108_64mme_FHD项目新建st18c10bnnxx项目
+    补丁编码：kelvin.yuan@20180731172533
+
+
+    [comm][camera]1.合并7.0camera代码去除不必要的camera效果
+    补丁编码：kelvin.yuan@20180731095624
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.53
+    ALPS04006097		"回退CTS work around的修改
+                         Roll back CTS work around"
+    ALPS04009201		"PowerAQ功能优化
+                         PowerAQ optimaze"
+    ALPS03879438		ov5645 sensor porting
+    ALPS04004556		[Google Security Patch][CVE-2018-9450]RCE Vulnerability in Bluetooth
+    ALPS04004549		[Google Security Patch][CVE-2018-9447]DoS Vulnerability in EmergencyCallbackModeExitDialog
+    ALPS04004554		[Google Security Patch][CVE-2018-9449]ID Vulnerability in Bluetooth
+    ALPS04004552		[Google Security Patch][CVE-2018-9448]ID Vulnerability in Bluetooth
+    ALPS04004570		[Google Security Patch][CVE-2018-9457]ID Vulnerability in Bluetooth
+    ALPS04004572		[Google Security Patch][CVE-2018-9458]EoP Vulnerability in Window manager
+    ALPS04001189		[Google Security Patch][CVE-2017-7369]EoP Vulnerability in sound driver (Device Specific)
+    ALPS04004574		[Google Security Patch][CVE-2018-9459]EoP Vulnerability in AOSP Mail
+    ALPS04004636		CtsMediaTestCases -- android.media.cts.VideoDecoderPerfTest 3 cases FAIL.
+    ALPS04004576		[Google Security Patch][CVE-2018-9461]ID Vulnerability in AOSP Messages
+    ALPS04004577		[Google Security Patch][CVE-2018-9465]EoP Vulnerability in binder (Device Specific)
+    ALPS03986515		"Chrome里播放爱奇艺视频导致黑屏，但声音还在播放。
+                         Blank screen when play videos, but the audio is still play."
+    ALPS04004510		[Google Security Patch][CVE-2017-13295]DoS Vulnerability in PackageInstaller
+    ALPS04004537		[Google Security Patch][CVE-2018-9440]DoS Vulnerability in libstagefright
+    ALPS04004530		[Google Security Patch][CVE-2018-9437]DoS Vulnerability in libstagefright
+    ALPS04004531		[Google Security Patch][CVE-2018-9438]DoS Vulnerability in VPN
+    ALPS04004515		[Google Security Patch][CVE-2017-13322]DoS Vulnerability in TelephonyManager
+    ALPS04000327		Fix KE issue
+    ALPS04004558		[Google Security Patch][CVE-2018-9451]ID Vulnerability in framework
+    ALPS04017147		Round QSB support o1
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS04016641		[TB8167P5_64_BSP][o1][Camera][Blocking] fix No camera APP exist after upgrade
+    ALPS04004540		[Google Security Patch][CVE-2018-9441]ID Vulnerability in Bluetooth
+    ALPS04004568		[Google Security Patch][CVE-2018-9456]DoS Vulnerability in Bluetooth
+    ALPS04004545		[Google Security Patch][CVE-2018-9445]EoP Vulnerability in vold
+    ALPS00458646		Update information for internal regular release
+    ALPS04004547		[Google Security Patch][CVE-2018-9446]RCE Vulnerability in Bluetooth
+    ALPS04004505		[Google Security Patch][CVE-2017-1000100]ID Vulnerability in libcurl
+    ALPS04004562		[Google Security Patch][CVE-2018-9453]ID Vulnerability in Bluetooth
+    ALPS04004507		[Google Security Patch][CVE-2017-13242]ID Vulnerability in Bluetooth Pairing
+    ALPS04004560		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04004566		[Google Security Patch][CVE-2018-9455]DoS Vulnerability in Bluetooth
+    ALPS04012485		Avoid AOSP log re-entry deadlock issues.
+    ALPS04017634		"移除CTS规避方案
+                          Remove CTS work around solution"
+    ALPS04017354		Round QSB support o1
+    ALPS04004525		[Google Security Patch][CVE-2018-9427]RCE Vulnerability in libstagefright
+    ALPS04004523		[Google Security Patch][CVE-2018-1068]EoP Vulnerability in Netfilter (Device Specific)
+    ALPS04005712		[Google Security Patch][CVE-2018-9454][CVE-2018-9436]ID Vulnerability in Bluetooth
+    ALPS04004579		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS04004528		[Google Security Patch][CVE-2018-9435]ID Vulnerability in Bluetooth
+    ALPS04009698		"L05B Nand在Vendor提供的超出部分有太多的坏块
+                          L05b has too much bad blocks in reserved area"
+    补丁编码: dongming@20180723141648
+
+
+    [ts108][common]修改168Bal DDR参数
+    补丁编码：zhong.huang@20180823140136
+
+
+    [common][Keybox]添加Keybox检测方法
+    注意事项:
+        Settings->Device Info->Status 中最下面显示Attestation key(Keybox)，其值为Installed为Keybox已烧写
+    
+    补丁编码: dongming@20180718230139
+
+
+    [common]关闭SignalController部分的部分debug信息
+    补丁编码: dongming@20180713151543
+
+
+    [common]解决64bit在ubuntu 16.04环境下编译错误问题
+    补丁编码: dongming@20180713150946
+
+
+    [common]History中添加项目的继承关系
+    补丁编码: dongming@20180708143100
+
+
+    [common]回退在emdoor.mk中添加删除*.prop操作。
+        删除prop会导致make otapackage无法编译成功。
+    注意事项：
+        在出GMS测试软件时，请大家先执行如下命令
+        find ./out/target/product/xxx/ -name "*.prop" | xargs rm
+    补丁编码: dongming@20180710154730
+
+
+    [common]项目继承信息中增加分支信息
+       例如: base on base on: xxx/ xxx@driver.only.8163
+       则表示为：这个项目是基于xxx@driver.only.8163分支上的xxx项目建立的
+    
+    补丁编码: dongming@20180707155814
+
+
+    [common]history文件支持MT8167 平台以及 64bit 版本
+    补丁编码:dongming@20180707144146
+
+
+    [common]删除ro.com.google.clientidbase.xxx, 并确保fingerprint，incremental一致性
+              但是在进行增量编译时，由于obj目录下的prop文件由于未改动且已经存在，导致prop没有进行同步更新
+    
+    补丁编码：dongming@20180707121457
+
+
+    [common]默认配置为releasekey
+    补丁编码:dongming@20180705165906
+
+
+    [common]修改lunch只显示device/emdoor目录下的项目
+    补丁编码:dongming@20180705165619
+
+
+    [COMM][CCT]添加CCT Orientation 属性，调整CCT 预览方向
+    补丁编码:zhenlin.zhang@20180620203030
+    注意事项:
+    	build.prop 添加属性 camera.acdk.orientation=0(90,180,270)
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.49.1
+    ALPS03992103		"修正GSI 180度屏ui显示异常
+                            fix gsi 2018-07-05 ui abnormal"
+    ALPS03988494		"auto check in CL78835 to alps-mp-o1.mp5
+                             mmm"
+    ALPS04001238		"无法开机
+                            can't auto power on after upgrade"
+    ALPS03906340		"移植F2FS
+                            enable F2FS"
+    ALPS03974676		"避免被執行不預期的程式分支
+                            avoid branch injection"
+    ALPS03981537		Add patch for foreign fence issue.
+    ALPS03983500		"移除hwc当中的横屏竖用解法
+                            remove hwc rotate for lcm feature"
+    ALPS03986519		[Google Security Patch][CVE-2017-0749]EoP Vulnerability in Linux kernel (Device Specific)
+    ALPS03879438		ov5645 sensor porting
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03801449		WFD Connect fail issue
+    ALPS03984806		[Project Configuration][Create Project] customer create project tool for common git
+    ALPS03980182		"移除display fb buffer
+                            kernel display remove disp_hal_allocate_framebuffer"
+    ALPS03974674		"關閉存儲前載入的優化功能
+                            Disable load pass store"
+    ALPS00458646		Update information for internal regular release
+    ALPS03981588		Update the poweroff alarm type to Rtc wakeup
+    ALPS03981586		JE happens after exceeding the limit to enter the numbers.
+    ALPS03965582		[Google Security Patch][CVE-2018-9425]EoP Vulnerability in Platform
+    ALPS03970267		Fix GPU dead lockup issue
+    ALPS03963830		To support + * # symbols to the input type in emergency number edit text
+    
+    补丁编码: dongming@20180707101931
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.45
+    ALPS00458646		Update information for internal regular release
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03965573		[Google Security Patch][CVE-2018-9413]RCE Vulnerability in Bluetooth
+    ALPS03959662		SettingsProvider google patch patch back
+    ALPS03959068		AMS:am stop-user timeout cause cts fail
+    ALPS03965569		[Google Security Patch][CVE-2018-9434]ID Vulnerability in Binder
+    ALPS03965578		[Google Security Patch][CVE-2018-9430]RCE Vulnerability in Bluetooth
+    ALPS03965570		[Google Security Patch][CVE-2018-9429]ID Vulnerability in libstagefright
+    ALPS03965557		[Google Security Patch][CVE-2018-9420]ID Vulnerability in Camera
+    ALPS03965553		[Google Security Patch][CVE-2018-9365]RCE Vulnerability in Bluetooth
+    ALPS03965560		[Google Security Patch][CVE-2018-9419]ID Vulnerability in Bluetooth
+    ALPS03965552		[Google Security Patch][CVE-2018-9421]ID Vulnerability in Parcel
+    ALPS03965572		[Google Security Patch][CVE-2018-9423]DoS/ID Vulnerability in libhevc
+    ALPS03965580		[Google Security Patch][CVE-2018-9414]EoP Vulnerability in Bluetooth GATT
+    ALPS03965600		[Google Security Patch][CVE-2018-6927]EoP Vulnerability in futex (Device Specific)
+    ALPS03965582		[Google Security Patch][CVE-2018-9425]EoP Vulnerability in Platform
+    ALPS03965555		[Google Security Patch][CVE-2018-9432]EoP Vulnerability in BluetoothPermissionActivity
+    ALPS03965545		[Google Security Patch][CVE-2018-9411]RCE Vulnerability in mediacas
+    ALPS03965596		[Google Security Patch][CVE-2018-9422]EoP Vulnerability in futex (Device Specific)
+    ALPS03965584		[Google Security Patch][CVE-2018-9431]EoP Vulnerability in hotspot2
+    ALPS03965907		WTF for non protected broadcast "Change state"
+    ALPS03904669		Modifying kernel config for A-Go performance verification
+    ALPS03838941		ESD check fail
+    ALPS03967205		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS03965568		[Google Security Patch][CVE-2018-9376]EoP Vulnerability in Accessibility
+    ALPS03965565		[Google Security Patch][CVE-2018-9426]ID Vulnerability in BouncyCastle
+    ALPS03965089		Alarm not triggered on time
+    ALPS03965550		[Google Security Patch][CVE-2018-9412]DoS Vulnerability in libstagefright
+    ALPS03965576		[Google Security Patch][CVE-2018-9418]RCE Vulnerability in Bluetooth service
+    ALPS03965547		[Google Security Patch][CVE-2018-9428]EoP Vulnerability in libaaudioservice
+    ALPS03965519		[Google Security Patch][CVE-2018-9410]ID Vulnerability in libminikin
+    ALPS03934580		Force charger type as STANDARD_HOST
+    ALPS03974126		"Specteck L05B高温55度烧机失败
+                            Fix Specteck L05b High Temperature Stress Test Fail"
+    ALPS03965546		[Google Security Patch][CVE-2018-9424]EoP Vulnerability in mediaDRM
+    ALPS03965609		[Google Security Patch][CVE-2018-1065]EoP Vulnerability in netfilter (Device Specific)
+    ALPS03965598		[Google Security Patch][CVE-2018-9417]EoP Vulnerability in USB driver (Device Specific)
+    
+    补丁编码:dongming.li@20180625104103
+
+
+    [COMM][charge]解决插充电器开机,PL 阶段有充电流，之后就没有电流
+    补丁编码:zhenlin.zhang@20180614204930
+    问题现象:解决插充电器开机,PL 阶段有充电流，之后就没有电流,重新插拔可正常充电
+
+
+    [common][gsensor] 测试sensor的app拿不到加速度计的data
+    编码补丁：colin@2018061152110
+
+
+    [common][patch]对比mtk原始项目合入patch
+    编码补丁：colin@20180611153312
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.42
+    ALPS00458646		Update information for internal regular release
+    ALPS03932768		"编译随机失败
+                            Build random fail"
+    ALPS03950373		fix CtsCameraTestCases fail
+    ALPS03842722		"新添加powraq lisense
+                            Add license for poweraq"
+    ALPS03913671		[Google Security Patch][CVE-2018-9369]EoP Vulnerability in Bootloader (Device Specific)
+    ALPS03943779		"一些备选的DDR setting更新
+                            some old ddr setting updated"
+    ALPS03932782		Stress Test launcher JE
+    ALPS03911012		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS03941071		camera test fail in FTM
+    ALPS03933961		"MT8167平台98995项目 重置wlan和蓝牙设置，蓝牙重置无效
+                            reset wlan and bluetooth, bluetooth no effect"
+    ALPS03909980		[Google Security Patch][CVE-2018-9344]EoP Vulnerability in MediaCasService
+    ALPS03910040		[Google Security Patch][CVE-2018-9379]ID Vulnerability in MediaProvider
+    ALPS03938561		TDM in Multi-record feature development
+    ALPS03946045		For HFP(HF role) PTS test
+    ALPS03944015		"Nand控制器软重启失败
+                            NFI Reset Timeout"
+    ALPS03936494		"支持L05b 16GB Nand
+                            Support L05b 16GB Nand"
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS03905964		fix Vulnerability Scanned errors
+    ALPS03913747		[Google Security Patch][CVE-2017-13308]EoP Vulnerability in Thermal (Device Specific)
+    ALPS03934825		API occur with yellow screen when launch camera to record one video.
+    ALPS03929142		enable ASD feature
+    ALPS03937765		Fix KE issue
+    ALPS03945266		"优化默认的BDADDR
+                            Refine default BDADDR"
+    ALPS03945698		"啟動 A2DP SRC/SNK 自動切換功能
+                            Enable A2DP SRC/SNK auto switch feature."
+    ALPS03941366		MTK Documents app must be headless , according to google's requirement
+    ALPS03948668		Sync wakeup BT fail issue.
+    ALPS03947816		seldom ic 2.4G evm fail
+    ALPS03930694		CTS of SystemFeaturesTest fail
+    ALPS03949039		disable fullramdump reserved memory when project is nand MLC
+    ALPS03932538		"NFI/ECC小概率随机出现timeout
+                            NFI/ECC random timeout"
+    ALPS03936761		system API dump in FB capture
+    ALPS03942805		KE occur when run DISP_IOCTL_SET_OUTPUT_BUFFER ioctl by ioctl_fuzzer64 tool
+    
+    补丁编码: dongming@20180608105136
+
+
+    [common][MtkSettings]屏蔽充电提示音开关
+    补丁编码：Shawn.XiaFei@20180606144532
+    
+    说明：
+    该开关相关代码仅和无线充电有联系，没有有线充电相关逻辑和资源
+
+
+    [COMM][LCM]解决1200x1920 LCM 从LK LOGO 切换到 KERNEL LOGO，LCM 下方出现彩纹
+    补丁编码:zhenlin.zhang@20180602111430
+    问题现象:1200x1920 LCM 从LK LOGO 切换到 KERNEL LOGO，LCM 下方出现彩纹
+
+
+    [COMM][LCM]解决配置1200x1920 LCM时,进入KERNEL 后异常重启
+    补丁编码:zhenlin.zhang@2018105930
+    问题现象:系统出现异常空指针
+
+
+    [common]默认Build Number后增加编译时间，辅助测试区分公版软件
+    补丁编码：Shawn.XiaFei@20180529162720
+    
+    说明：
+    测试反馈公版软件Build Number都是011019 test-keys，不方便区分软件版本；故在后面添加编译时间，辅助区分。
+    有具体项目后，应当按具体规则去修改。
+
+
+    [common][GMS]修正完整GMS引用路径
+    补丁编码：Shawn.XiaFei@20180523
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.36
+    ALPS00458646		Update information for internal regular release
+    ALPS03897625		"修正merge_hal_service selinux 权限问题
+                        fix merge_hal_service access libperselfservice"
+    ALPS03910950		"為避免使用者隱私信息洩漏，使用intent broadcast 傳遞location 信息，應加入permission 的保護。
+                        Add permission to avoid location information leakage."
+    ALPS03909953		[Google Security Patch][CVE-2018-9339]EoP Vulnerability in Framework
+    ALPS03897693		it occurs aee duting prepare
+    ALPS03891928		fix rescan issue
+    ALPS03899659		"Camera模块log过多。
+                        Camera: log too much."
+    ALPS03908804		"radio HIDL interface与内部codebase不sync
+                        fix HIDL Consistency issues"
+    ALPS03906528		fix device policy gts/cts fail at gmo project
+    ALPS03909950		[Google Security Patch][CVE-2018-9338][CVE-2018-9340]EoP/ID Vulnerability in SystemServer
+    ALPS03868880		fix PMF 5.3.3.2 fail
+    ALPS03909963		[Google Security Patch][CVE-2017-13227]ID Vulnerability in Autofill service
+    ALPS03842722		"新添加powraq lisense
+                        Add license for poweraq"
+    ALPS03913663		[Google Security Patch][CVE-2018-9366]EoP Vulnerability in IMSA (Device Specific)
+    ALPS03838941		ESD check fail
+    ALPS03911449		Disable managed_users and activities_on_secondary_displays  feature for low_ram devices
+    ALPS03911732		Can not show song in Music
+    ALPS03913687		[Google Security Patch][CVE-2018-9389]EoP Vulnerability in IPv4 / IPv6 (Device Specific)
+    ALPS03906871		[Makefile] [Patchback: Feature Option] CKRQ-00015049
+    ALPS03928603		"None
+                         Modify for internal project"
+    ALPS03908742		[Makefile] [Patchback: Feature Option] CKRQ-00015059
+    ALPS03906366		[Makefile] [Patchback: Feature Option] CKRQ-00015041
+    ALPS03897719		"修正某些app process无法访问sw_sync问题
+                         fix app access sw_sync"
+    ALPS03858451		"開啟安全開機驗證功能後無法驗證odmdtbo 分區.
+                         verify odmdtbo fail after enabling secure boot"
+    ALPS03877122		Fix antutu 7.0.9 can not run on 32bit load.
+    ALPS03913747		[Google Security Patch][CVE-2017-13308]EoP Vulnerability in Thermal (Device Specific)
+    ALPS03913644		[Google Security Patch][CVE-2017-17806]EoP Vulnerability in Crypto (Device Specific)
+    ALPS03913649		[Google Security Patch][CVE-2017-17807]EoP Vulnerability in Keyring (Device Specific)
+    ALPS03913754		[Google Security Patch][CVE-2018-9404]EoP Vulnerability in Radio Interface Layer (Device Specific)
+    ALPS03920065		add hdmi support
+    ALPS03913650		[Google Security Patch][CVE-2017-17558]EoP Vulnerability in USB (Device Specific)
+    ALPS03919678		"CTS 測項失敗
+                         battery CTS test item fai"
+    ALPS03913675		[Google Security Patch][CVE-2018-9372]EoP Vulnerability in Bootloader (Device Specific)
+    ALPS03921181		CtsMediaTestCases-android.media.cts.MediaRecorderTes 3 item Failed
+    ALPS03920594		[Google Security Patch][CVE-2018-9400]EoP Vulnerability in Good-ix Touchscreen Driver (Device Specific)
+    ALPS03913673		[Google Security Patch][CVE-2018-9370]EoP Vulnerability in Bootloader (Device Specific)
+    ALPS03923765		Cannot choose contacts as attachmnet when write E-mail.
+    ALPS03913728		[Google Security Patch][CVE-2018-9394]EoP Vulnerability in P2P (Device Specific)
+    ALPS03913674		[Google Security Patch][CVE-2018-9371]EoP Vulnerability in Bootloader (Device Specific)
+    ALPS03913691		[Google Security Patch][CVE-2018-7480]EoP Vulnerability in Block handler (Device Specific)
+    ALPS03913698		[Google Security Patch][CVE-2017-18075]EoP Vulnerability in Pcrypt (Device Specific)
+    ALPS03913732		[Google Security Patch][CVE-2018-9396]EoP Vulnerability in CCCI (Device Specific)
+    ALPS03913680		[Google Security Patch][CVE-2018-9383]ID Vulnerability in ASN1 decoder (Device Specific)
+    ALPS03913737		[Google Security Patch][CVE-2018-9398]EoP Vulnerability in FM Radio Driver (Device Specific)
+    ALPS03910031		[Google Security Patch][CVE-2018-9374]EoP Vulnerability in PackageManager
+    ALPS03910053		[Google Security Patch][CVE-2018-9352]DoS/ID Vulnerability in Libhevc
+    ALPS03909967		[Google Security Patch][CVE-2018-9341]RCE Vulnerability in libmpeg2
+    ALPS03910033		[Google Security Patch][CVE-2018-9375]EoP Vulnerability in User dictionary
+    ALPS03909985		[Google Security Patch][CVE-2018-9345][CVE-2018-9346]ID Vulnerability in Audio
+    ALPS03910039		[Google Security Patch][CVE-2018-9378]ID Vulnerability in Audio server
+    ALPS03909992		[Google Security Patch][CVE-2018-9347][CVE-2018-9348]DoS Vulnerability in sonivox
+    ALPS03910042		[Google Security Patch][CVE-2018-9349]DoS/ID Vulnerability in Libvpx
+    ALPS03909995		[Google Security Patch][CVE-2018-9355]RCE Vulnerability in Bluetooth
+    ALPS03910044		[Google Security Patch][CVE-2018-9350]DoS/ID Vulnerability in Libavc
+    ALPS03909996		[Google Security Patch][CVE-2018-9356]RCE Vulnerability in Bluetooth
+    ALPS03910046		[Google Security Patch][CVE-2018-9351]DoS/ID Vulnerability in Libhevc
+    ALPS03909998		[Google Security Patch][CVE-2018-9357]EoP Vulnerability in Bluetooth
+    ALPS03913684		[Google Security Patch][CVE-2018-9385]EoP Vulnerability in Amba (Device Specific)
+    ALPS03910003		[Google Security Patch][CVE-2018-9362]DoS Vulnerability in com.android.phone
+    ALPS03909999		[Google Security Patch][CVE-2018-9358]ID Vulnerability in Bluetooth
+    ALPS03910013		[Google Security Patch][CVE-2018-5383]ID Vulnerability in Bluetooth
+    ALPS03910061		[Google Security Patch][CVE-2018-9380]EoP Vulnerability in Bluetooth
+    ALPS03910054		[Google Security Patch][CVE-2018-9353]DoS/ID Vulnerability in Libhevc
+    ALPS03910057		[Google Security Patch][CVE-2018-9354]DoS/NSI Vulnerability in Libstagefright
+    ALPS03910064		[Google Security Patch][CVE-2018-9381]ID Vulnerability in Bluetooth
+    ALPS03910892		"RTC相关部分ioctl无法使用
+                         RTC related ioctl cannot work"
+    ALPS03910001		[Google Security Patch][CVE-2018-9359][CVE-2018-9360][CVE-2018-9361]ID Vulnerability in Bluetooth
+    
+    补丁编码: dongming@20180524164111
+
+
+    [common]解决Settings->Display->Auto Rotation关闭后强制竖屏显示，更正为固定在当前方向
+    补丁编码:dongming@20180523120129
+
+
+    [common] [charger] 关机充电会出现低概率拔掉充电器 按power键 还显示充电
+                       logo；
+     补丁编码: bran@20180521112635
+
+
+    [common] [charger] 关机充电会出现低概率拔掉充电器 按power键 还显示充电
+                       logo；
+     补丁编码: bran@20180521112635
+
+
+    [common] [music] 无法播放文件管理器和t卡音乐
+    补丁编码: bran@20180521192830
+
+
+    [common]GMS关闭状态下不编译Videos，避免误编译出Google Play Movies
+    补丁编码：Shawn.XiaFei@20180521171952
+
+
+    [common][Launcher3Go]解决桌面横屏时长按应用列表最右侧图标，弹出框显示在中间问题。
+    补丁编码：Shawn.XiaFei@20180521162306
+
+
+    [common] [systemui]补充关于SystemUI的修改
+    补丁编码：bran@20180521153840
+
+
+    [common][SystemUI]添加一键截屏，导航键添加音量控制
+    说明：
+    1. 对应项目projiectConfig.mk 中NAV_VOLUME_SUPPORT 为yes，则添加音量控制导航键
+    2. 对应项目projectConfig.mk  中SHOW_SCREENSHOT_ON_QS 为yes，则qs中添加截屏快捷键
+    补丁编码：bran@20180521153450
+
+
+    [common][audio]兼容dsp i2s之后 后台播放音乐会出现唤醒声音停顿
+    补丁编码：colin.zeng@20180519115502
+
+
+    [common][build] 原始代码引用没定义变量 导致打开某些配置之后编译报错
+    补丁编码：colin.zeng@20180516135209
+
+
+    [common][SoundRecorder]解决录音机无桌面图标，且提示没有权限问题
+    补丁编码：Shawn.XiaFei@20180516115857
+
+
+    [common][SoundRecorder]默认打开录音机功能支持开关
+    补丁编码：Shawn.XiaFei@20180616115436
+    
+    说明：
+    已存在的项目已添加支持，后续新创建的项目将自动添加支持；
+    若不需要SoundRecorder，可在各自项目的ProjectConfig中关闭MTK_SOUNDRECORDER_APP
+
+
+    [common][HDMI]支持HDMI时，设置中显示HDMI选项
+    补丁编码：Shawn.XiaFei@20180516105508
+    
+    说明：
+    添加在这里是为了通过ADDITIONAL_BUILD_PROPERTIES将属性输出到system/build.prop
+
+
+    [common][MtkEmail]解决首次启动弹出Exchange授权提示框问题
+    补丁编码：Shawn.XiaFei@20180515152900
+
+
+    [common][MtkBrowser]默认关闭安全警告，避免频繁显示安全警告弹窗
+    补丁编码：Shawn.XiaFei@20180514180220
+
+
+    [common][Browser]默认使用MtkBrowser替换Browser2
+    补丁编码：Shawn.XiaFei@20180514163626
+    
+    O1默认使用的Browser2，没有可用性，不方便测试，故替换为MtkBrowser。
+
+
+    [common][framework-res]去除语言列表里的粤语选项
+    补丁编码：Shawn.XiaFei@20180514154615
+    
+    大多应用都没有粤语语言包，故会造成一种语言切换无效的错觉。
+
+
+    [common][MtkSettingsProvider]默认关闭蓝牙
+    补丁编码：Shawn.XiaFei@20180514152133
+    
+    同时关闭了新建项目时的base资源。
+    若有需求打开，请自行修改对应的overlay。
+
+
+            [common][RTC]rtc ioctl操作失败（patch from mtk）
+            补丁编码：colin.zeng@201805121619
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.29
+    补丁编码: dongming@20180511162755
+    ALPS03842722		"新添加powraq lisense
+    			add license for poweraq"
+    ALPS03876878		com.android.mtp occur JE
+    ALPS00458646		Update information for internal regular release
+    ALPS03877422		Fix com.android.mtp crash
+    ALPS03897632		"随机测试中打到权限检查，导致蓝牙传文件过程异常触发Java Exception
+                            Add Security Exception catch for monkey test which caused permission denied"
+    ALPS03862126		"更新 tCCD setting for MT8167 PCDDR4
+                            update tCCD setting for MT8167 PCDDR4"
+    ALPS03865796		"MT8167 4BITX4 方案支持
+                            MT8167 4BITX4 solution support"
+    ALPS03871870		Improve Throughput
+    ALPS03784684		fix mmc rpmb driver legacy error
+    ALPS03862172		[Google Security Patch][CVE-2017-13227]ID Vulnerability in Autofill
+    ALPS03904667		Modifying kernel config for A-Go performance verification
+    ALPS03872433		panel cann't display during resume
+    ALPS03882416		"修正deep idle場景電壓調整模式
+                            Fix deep idle scenario CPU voltage control mode"
+    ALPS03904681		fix camera NE
+    ALPS03858451		"開啟安全開機驗證功能後無法驗證odmdtbo 分區.
+                            verify odmdtbo fail after enabling secure boot"
+    ALPS03890910		"驗證開機的紅色狀態在O 版應該要停止開機
+                            RED state should stop boot on Android O"
+    ALPS03874018		"安全開機支援
+                             secure boot support"
+    ALPS03881459		"将/data分区设定为F2FS type
+                            enable F2FS for /data Partition"
+    ALPS03883704		"DivX/S263 版權設定
+                             DivX/S263 license setting"
+    ALPS03900727		"解决multi方式写同一个mlc/tlc plane的问题。
+                            fix multi write same mlc/tlc plane issue"
+    ALPS03879438		ov5645 sensor porting
+    ALPS03906359		[Makefile] [Patchback: Feature Option] CKRQ-00015040
+    ALPS03901988		"未配置F2FS
+                            F2FS configuration"
+    ALPS03889199		WidevineCodecStressTests 3 cases failed
+    ALPS03884399		[TB8167P1_bsp_nand][ATA Tool][Storage]NE occur after run storage in ATA tool (In factory mode is OK)
+    ALPS03904669		Modifying kernel config for A-Go performance verification
+    ALPS03896099		"合入字幕及change audio功能之后一些小bug修复
+                            Fix some problems after customer merged change audio & change subtitle feature."
+    ALPS03897694		"'com.mediatek.camera.setting.preference.PreferenceGroup com.mediatek.camera.setting.SettingGenerator.getPreferenceGroup()' on a null object reference
+                            at com.mediatek.camera.setting.SettingCtrl.getPreferenceGroup(SettingCtrl.java:309)"
+    ALPS03901979		"根据google的要求添加ago对应的kernel config
+                            add kernel config by google's a-go rule"
+    ALPS03905824		fix build fail when disable MMP
+    ALPS03897644		MTBF finalize timed out issue
+    ALPS03897406		fix imgsensor kernel API dump
+    ALPS03899611		log too much in Music.apk
+    ALPS03902469		[Makefile] [Patchback: Feature Option] CKRQ-00015020
+    ALPS03906124		When run MTBF test, device occurs JE(com.android.settings)
+    ALPS03899653		[TB8167p3_bsp][O1][MTBF+monkey][System API Dump] When run MTBF test, device occurs System API Dump(Android log much)(libimageio.so)
+
+
+    [common]重启时对话框显示重启
+    补丁编码：Shawn.XiaFei@20180511141804
+
+
+            [common][WIFI]默认打开WiFi BW20_40(补充提交)
+            补丁编码：colin.zeng@20180511093712
+
+
+        [common][WIFI]默认打开WiFi BW20_40
+        补丁编码：colin.zeng@20180510203512
+
+
+    [common][SD/OTG]修复SD卡、OTG中文名显示异常
+    补丁编码：Shawn.XiaFei@20180510180603
+
+
+    [common][Music]解决音乐播放器里面Tab栏重复显示问题
+    补丁编码：Shawn.XiaFei@20180510152324
+
+
+    [common][SystemUI]解决Recents界面只有删除一个或者滑动后才显示Clear All问题
+    补丁编码：Shawn.XiaFei@20180510162239
+
+
+    [common][ATA]支持RTC ATA
+            [补丁编码]colin.zeng@20180510143525
+
+
+        [common][ATA]上一个ＨＤＭＩ　ＡＴＡ的提交可能会　影响ｈｄｃｐ
+                [补丁编码]colin.zeng@20180510143212
+
+
+    [common][ATA]HDMI ATA FAIL
+            [补丁编码]colin.zeng@20180510140713
+
+
+    [common][barcode]系统默认不写序列号 adb会连不上电脑；现在对于eng版本不做此限制
+            [补丁编码]colin.zeng@20180508141727
+
+
+    [common][accdet] 线控耳机无作用
+            [补丁编码]colin.zeng@20180503124123
+
+
+    [common][display] 进入boot menu mode的时候  有些机器会出现白屏
+                       [补丁编码]colin.zeng@20180502173131
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.21
+       修改如下：
+    ALPS03846557		improve sdio performance
+    ALPS03862177		[Google Security Patch][CVE-2017-13314]EoP Vulnerability in Network management service
+    ALPS03855315		Alarm from deskclock need not be grouped in backgroung power saving.
+    ALPS03773275		[Buganizer]Security Vulnerability Issue 72313860 - [Android GO Pentesting] - Multiple Race Conditions on File Read in DmAgent
+    ALPS03862183		[Google Security Patch][CVE-2017-13318]ID Vulnerability in Libheif
+    ALPS03842684		"加入bugreport service
+    add bugreport service"
+    ALPS03862215		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS03862178		[Google Security Patch][CVE-2017-13315]EoP Vulnerability in Telephony
+    ALPS03886183		reduce boot time of preloader
+    ALPS03862198		[Google Security Patch][CVE-2017-13322]DoS Vulnerability in Telephony
+    ALPS03862196		[Google Security Patch][CVE-2017-13320]ID/DoS Vulnerability in Libmpeg2
+    ALPS03862172		[Google Security Patch][CVE-2017-13227]ID Vulnerability in Autofill
+    ALPS03862289		"显示拓展的fw版本
+    wlan:report extend firmware version"
+    ALPS03862197		[Google Security Patch][CVE-2017-13321]ID Vulnerability in Sensor service
+    ALPS03868267		"AGO GMS要求data分区达到十进制5.5GB
+    For AGO_GMS partition size required"
+    ALPS03866935		Settings keeps stopped enter Storage SD card
+    ALPS03865396		KE at _convert_disp_input_to_ovl run ioctl_fuzzer64
+    ALPS03838941		ESD check fail
+    ALPS03862210		[Google Security Patch][CVE-2018-5344]EoP Vulnerability in Block driver (Device Specific)
+    ALPS03860800		"解PUBG卡顿问题。
+    Fix GPU HWR"
+    ALPS03786212		Add mutex lock for redo kick vcore dvfs
+    ALPS03842722		"新添加powraq lisense
+    Add license for poweraq"
+    ALPS03868132		KE occur at mtkfb_fm_auto_test after run ioctl_fuzzer64
+    ALPS00458646		Update information for internal regular release
+    ALPS03862195		[Google Security Patch][CVE-2017-13319]ID/DoS Vulnerability in MP3 codec
+    ALPS03855745		"处理32位工程编译失败问题
+    Handle 32bit project build error problem"
+    ALPS03862182		[Google Security Patch][CVE-2017-13317]ID Vulnerability in Libheif
+    ALPS03877146		MTK_WFD_HDCP_TX_SUPPORT = yes
+    ALPS03869846		fix ioctl_fuzzer issue
+    ALPS03874014		KE at fbconfig_ioctl when run ioctlfuzzer
+    ALPS03868369		[TB8176P1_64_BSP][Vulnerability Scan]KE occur at ffffffc00046bd08 vmlinux  _m4u_config_port after run ioctl_fuzzer64 for about 1 hours
+    ALPS03874035		GPS firmware update
+    ALPS03870264		"XO模块的xo_board_offset节点会出现设置参数出错的情况
+    XO module xo_board_offset get wrong parameter"
+    ALPS03871223		KE occur when run ioctlfuzzer of mtkfb module
+    ALPS03872215		Printk too much
+    ALPS03876977		"修正Keymaster attestation key install失敗
+    Fix Keymaster attestation key install failed issue"
+    ALPS03870284		Stop button does not work.It will pause music but not stop.
+    ALPS03870893		[AGO GTS][PATCH] Fix over-granting permission on low ram
+    ALPS03872417		fix spinlock-deadlock in system suspend/resumeflow.
+    ALPS03868354		can't read edid in hdmi idle state
+    ALPS03868606		fix ioctl_fuzzer fail
+    ALPS03828956		"mntl block主线程中存在长时间休眠。
+    long sleep issue in mntl_block_thread"
+    ALPS03878885		prevent illegal memory access
+    ALPS03878167		"避免perfservice印出不必要的錯誤訊息
+    avoid perfservice printing unnecessary error messages"
+    ALPS03881766		"vendor lib缺少相關library
+    vendor lib lost a library for perfservice"
+    ALPS03881459		"将/data分区设定为F2FS type
+    enable F2FS for /data Partition"
+    
+    补丁编码:dongming@20180502120219
+
+
+    [common]改善Tablet默认方向机制，属性定义如下：
+        1. ro.hw.rotation Android系统的方向，此项修改会导致UI显示方向变化，sensor方向不对，以及TP触摸位置不正确
+    
+        2. persist.panel.orientation 用来定义机器平放时的方向。
+           请在你的项目中的device.mk中加入
+           PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.panel.orientation=0
+           这样这个系统属性存于boot中，开机时会被优先处理
+    
+        3. 使用ro.sf.bootanimation_rotation 与 ro.sf.revert_bootanimation_xy来控制开机动画方向
+        4. ro.sf.recoveryrotation 控制recovery显示方向
+        5. ro.charge.animation_rotation，用来控制关机充电动画的方向
+           在device.mk中添加 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.charge.animation_rotation=0
+    
+        6. ro.boot.rotation_after_logo  -- 控制开机过程中，kernel logo->开机动画过程中的显示方向
+
+
+    [common][Camera]允许Camera应用随gsensor旋转
+    补丁编码:dongming@20180427090454
+
+
+    [COMM][preloader]支持LPDDR3
+    补丁编码:zhenlin.zhang@20180427175930
+    注意事项:
+    	1,支持LPDDR3 如下表:
+    	    |==============================================================|
+            |Density ||  Type  || Dram setting label     || Recommended bps|
+            |==============================================================|
+            |1GiB    || LPDDR3 || RS256M32LD3D2LPF_125BT ||      800       |
+            |2GiB    || LPDDR3 || MT52L512M32D2PU        ||      800       |
+            |1GiB    || LPDDR3 || PB047                  ||      800       |
+            |==============================================================|
+    	2,调整DDR CLOCK 配置位置:
+    	vendor/mediatek/proprietary/bootable/bootloader/preloader/platform/mt8163/src/drivers/inc/pll.h
+    	====>
+    	vendor/mediatek/proprietary/bootable/bootloader/preloader/custom/项目/inc/custom_MemoryDevice.h
+    	3,可同时配置不同DRAM 类型的CLOCK
+
+
+    [common][tp]默认开启tp esd;
+            补丁编码:colin.zeng@20180424111001
+
+
+    [common][6630]32位系统 6630模块编译不过（patch from mtk）
+            补丁编码:colin.zeng@20180416093312
+
+
+    [common]默认添加AutoReboot
+    补丁编码:dongming@20180410143054
+
+
+    [common]add autoreboot app
+    补丁编码:dongming@20180410142755
+
+
+     [commmon][usb hub]目前设计hub ic除了5V 无需其他供电先屏蔽相关代码
+              [补丁编码]colin.zeng@20180409100910
+
+
+    [common]添加dorelease脚本，方便软件发布
+    补丁编码:20180408170423
+
+
+    [common]添加HistoryView， 查看代码环境信息（Settings->Search 框中输入#history查看）
+    补丁编码:20180408170218
+
+
+    [common]开启SERIAL_NUM_FROM_BARCODE，支持烧写序列号
+    补丁编码:dongming@20180408165927
+
+
+    [commmon][charger]提交的外部充电code逻辑有问题
+             [补丁编码]colin.zeng@20180404172301
+
+
+    [common]在Settings的search输入框中添加命令启动常用工具
+        1. #mtklog   开启MTKLogger App
+        2. #engmode  开启MTK EnginerMode App
+        3. #autoreboot 开启AutoReboot APP
+        4. #factorytest 恢复出厂设置压力测试
+        5. #history  查看修改记录以及软件的配置信息
+    补丁编码:hailing.ye@20180404105217
+
+
+    [MT8163][COMMON]补全代码中的宏定义隔离
+    补丁编码；zhenlin.zhang@2018192035
+    注意事项:
+    	#define MTK_DISP_IDLE_LP
+    	#define DISP_ENABLE_SODI
+    	屏蔽上述两个宏后,出现编译异常,代码隔离不完整
+
+
+    [common][charger]DC和usb无法识别并且无法区分；增加外部充电IC的控制
+            [补丁编码]colin.zeng@20180402152311
+            [注意事项] 支持的DC的项目请打开CONFIG_MTK_DUAL_INPUT_CHARGER_SUPPORT
+                       支持外部充电IC的打开CONFIG_EXT_CHARGER_IC_BY_GPIO
+
+
+    [common]解决添加security boot后开机因odmdtbo校验不过导致无法开机
+    补丁编码:dongming@20180331154634
+
+
+    [common][camera]8163和8167共用camera定义  最新代码编译会报错
+            [补丁编码]colin.zeng@20180331130213
+
+
+    [common][usb hub]默认开启hub；增加USB hub，pogo,以及host的控制
+            [补丁编码]colin.zeng@20180331120219
+
+
+    [common][hdmi]8167平台 hdmi不完整；hdmi不显示
+                    [补丁编码]colin.zeng@20180331111108
+
+
+    [common]同步MT8321 O1 GMS分支
+    补丁编码：dongming@20180331071401
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.3
+    补丁编码:dongming@20180330220615
+
+
+    [common][build]stk8baxx 32位系统编译报错
+            [编码补丁] colin.zeng@20180328184909
+
+
+     [common][gsensor] 移植gsensor  stk8baxx
+             [编码补丁] colin.zeng@20180322195101
+
+
+    [common][mtk-patch]update to t-alps-release-o1.mp5-V1.18
+    补丁编码:dongming@20180317111548
+
+
+    [common][accdet] 四段耳机插入之后 拔出来图标不会消失
+            [编码补丁] colin.zeng@20180313143004
+
+
+    [common][device] 创建em_r70_p3mme（32位系统）项目
+            [补丁编码]colin.zeng@20180307104734
+
+
+    [common][device] 将常用物料客制化分开
+            [补丁编码]colin.zeng@20180307104734
+
+
+    [common][build] 32位系统编译失败
+            [补丁编码]colin.zeng@20180307161920
+
+
+^^^^^
+===== GMS ====
+vvvvv
+
+    [common]GO版本默认添加Music2、Photos
+    
+    补丁编码：ShawnXiaFei@20181016092510
+
+
+    [common]修正部分GMS资源覆盖路径
+    
+    补丁编码：ShawnXiaFei@20181015145900
+    
+    说明：
+    GMS 部分资源存在覆盖原始资源的情况，但路径指向的是 ALPS 的路径，MTK 平台部分路径存在差异。
+
+
+    [common]override Mtk Apps
+    
+    补丁编码：ShawnXiaFei@20181015145729
+    
+    override Email、MusicBspPlus
+
+
+    [common]add GMS package 8.1_201809
+    补丁编码: dongming@20180918213328
+
+
+    [common]overrides mtk apps
+    补丁编码: dongming@20180918210846
+
+
+    [common] add gms package 8.1_201806
+    补丁编码: dongming@20180707101317
+
+
+    [common]GMS包默认预装必须要求的app；
+            GooglePackageInstaller override MtkPackageInstall；
+            SetupWizard使用tablet版本
+    补丁编码: dongming@20180515162127
+
+
+    [common]add gms 8.1_201805
+    补丁编码: dongming@20180511094341
+
+
+    [common]add 8.1_go_R1
+    补丁编码:dongming@20180331074728
+
+
+    [common]overrides MtkPackageInstaller
+
+
+    [common]GMS 8.1
+^^^^^
