@@ -6680,6 +6680,7 @@
 (neverallow sgdisk_27_0 base_typeattr_167_27_0 (file (entrypoint)))
 (allow shared_relro_27_0 shared_relro_file_27_0 (dir (ioctl read write getattr lock add_name remove_name search open)))
 (allow shared_relro_27_0 shared_relro_file_27_0 (file (ioctl read write create getattr setattr lock append map unlink rename open)))
+(allow shared_relro_27_0 activity_service_27_0 (service_manager (find)))
 (allow shared_relro_27_0 webviewupdate_service_27_0 (service_manager (find)))
 (allow shell_27_0 logcat_exec_27_0 (file (ioctl read getattr lock map execute execute_no_trans open)))
 (allow shell_27_0 logdr_socket_27_0 (sock_file (write)))

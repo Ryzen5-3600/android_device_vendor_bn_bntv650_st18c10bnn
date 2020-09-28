@@ -2,7 +2,7 @@
 IP: 192.168.2.171 Bcast
  
 =====SRC DIRECTORY====
-/mnt/disk/bran/8.1_ts108_jh_only/mt8167_o1.mp5_v1
+/mnt/disk/angle/project/Android8.1_1029/mt8167_o1.mp5_v1
  
 =====CONFIGS====
 DDR: 
@@ -25,10 +25,10 @@ eMMC MAX CLK:
  
 =====GIT BRANCH====
 GMS:
-* 8.1_201809_jh_N10
+* 8.1_201812
  
 main:
-* ts108_64_jh
+* ts108_64_jh_SMR
  
 =========Project Inheritance relationship ========
 
@@ -39,6 +39,694 @@ base on: tb8167p3_64_bsp/ em_ts108@driver.only.8167
 #############################################################
 ===== main ====
 vvvvv
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.247 (Security patch: 2020-05-05)
+    ALPS05070825		Camera sensor: enable iBurstWriteReg_multi API
+    ALPS05077232		[Google Security Patch][CVE-2020-0102]EoP Vulnerability in Bluetooth
+    ALPS05022993		[Google Security Patch][CVE-2020-0081]EoP Vulnerability in AssetManager
+    ALPS05081362		[Google Security Patch][CVE-2020-0096]EoP Vulnerability in Activity Manager
+    ALPS05087087		[Google Security Patch][CVE-2020-0100]ID Vulnerability in HDCP
+    ALPS05031357		[Google Security Patch]Update Security Patch Level to 2020-04-05
+    ALPS05082142		[Google Security Patch][CVE-2020-0096]EoP Vulnerability in Activity Manager
+    ALPS05020311		[Google Security Patch][CVE-2020-0072][CVE-2020-0070][CVE-2020-0071][CVE-2020-0073]RCE Vulnerability in NFC
+    ALPS05075204		[Google Security Patch][CVE-2020-0093]ID Vulnerability in libexif
+    ALPS05075320		[Google Security Patch][CVE-2020-0101]ID Vulnerability in libmediadrm
+    ALPS05085118		[Google Security Patch]Update Security Patch Level to 2020-05-05
+    ALPS05019327		[Google Security Patch][CVE-2020-0074]EoP Vulnerability in Package manager
+    ALPS05067753		"修正 Eigen library 的 license 宣告
+    Fix the OSS license in Eigen library"
+    ALPS05020298		[Google Security Patch][CVE-2019-19807]EoP Vulnerability in Audio Subsystem (Device Specific)
+    ALPS05082065		[Google Security Patch][CVE-2019-14053]Security Vulnerability in Kernel (Device Specific)
+    ALPS05020851		[Google Security Patch][CVE-2019-19524]EoP Vulnerability in USB input driver (Device Specific)
+    ALPS05077002		[Google Security Patch][CVE-2019-19536]ID Vulnerability in PCAN-USB driver (Device Specific)
+    ALPS05078044		[Google Security Patch][CVE-2020-0024]EoP Vulnerability in System Settings
+    ALPS05078673		[Google Security Patch][CVE-2020-0098]EoP Vulnerability in Framework
+    ALPS05076909		[Google Security Patch][CVE-2020-0108]EoP Vulnerability in Activity Manager
+    ALPS05024007		[Google Security Patch][CVE-2019-19532]EoP Vulnerability in USB HID drivers (Device Specific)
+    
+    CodeNo: dongming@20200507104852
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.237.1 (Security patch: 2020-03-05)
+    ALPS04900206		Wi-Fi connection is rejected by AP and status code are 65521 and 65522.
+    ALPS04988046		[Google Security Patch][CVE-2020-0032]RCE Vulnerability in libavc
+    ALPS04916849		change to early resume
+    ALPS04969703		[Google Security Patch][CVE-2019-2116]ID Vulnerability in Bluetooth
+    ALPS04948917		BT ANR issue
+    ALPS04986713		[Google Security Patch][CVE-2020-0021]DoS Vulnerability in Package Manager
+    ALPS04987119		[Google Security Patch][CVE-2020-0033]EoP Vulnerability in clearkey
+    ALPS04986644		[Google Security Patch][CVE-2020-0037][CVE-2020-0038][CVE-2020-0039]ID Vulnerability in NFC
+    ALPS04986869		[Google Security Patch][CVE-2020-0036]EoP Vulnerability in Connectivity
+    ALPS04967064		[Google Security Patch][CVE-2020-0027]EoP Vulnerability in HidRawSensor
+    ALPS04965274		[Google Security Patch][CVE-2020-0014]EoP Vulnerability in WindowManager
+    ALPS04966556		[Google Security Patch][CVE-2020-0018]ID Vulnerability in inputflinger
+    ALPS04971619		[Google Security Patch][CVE-2020-0022]RCE Vulnerability in Bluetooth
+    ALPS04964667		[Google Security Patch][CVE-2020-0024]EoP Vulnerability in Screen Pinning
+    ALPS04988368		[Google Security Patch][CVE-2020-0035]ID Vulnerability in TelephonyProvider
+    ALPS04993458		[Google Security Patch]Update Security Patch Level to 2020-03-05
+    ALPS04790374		update 7668 FW to Mp2.3
+    ALPS04970985		[Google Security Patch][CVE-2020-0005]EOP Vulnerability in Bluetooth LMP
+    ALPS04990888		[Google Security Patch][CVE-2020-0034]ID Vulnerability in libvpx
+    ALPS04971300		[Google Security Patch][CVE-2020-0017]ID Vulnerability in Input
+    ALPS04968444		[Google Security Patch][CVE-2020-0015]EoP Vulnerability in CertInstaller
+    ALPS04985054		[Buganizer]Security Vulnerability in Email app that allows 3rd-party app to get users' private email messages by the backup feature without additional permission
+    ALPS04969427		[Google Security Patch][CVE-2020-0026]EoP Vulnerability in Binder
+    ALPS04973932		[Google Security Patch]Update Security Patch Level to 2020-02-05
+    ALPS04988714		[Google Security Patch][CVE-2019-19537]EoP Vulnerability in USB (Device Specific)
+    ALPS04986803		[Google Security Patch][CVE-2019-19527]EoP Vulnerability in USB (Device Specific)
+    ALPS04986961		[Google Security Patch][CVE-2019-14079]Security Vulnerability in USB (Device Specific)
+    ALPS04998081		[External Feedback]Security Vulnerability in CMDQ driver that may allow attackers to get root privilege under certain conditions
+    ALPS04987280		[Google Security Patch][CVE-2020-0040]EoP Vulnerability in Networking (Device Specific)
+    
+    CodeNo: dongming@20200227170129
+
+
+    [st18c10bnnxx]修改版本号，ro.com.google.clientidbase=android-southerntelecom
+
+
+    [common][MT8167]解决机器做自动重启实验出现的卡LOGO问题,主要有2个修改点,一个是设置wifi中断引脚默认上拉到高电平,另外一个是对wifi中断申请前进行睡眠一段时间
+    补丁编码：zhong.huang@20200305125430
+    卡logo关键信息打印log：[<ffffff800866cadc>] mtk_wcn_cmb_sdio_request_eirq+0x9c/0xf8和很多的[DISP][_is_lcm_inited #44]ERROR:WARNING, invalid lcm handle:
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.227 (Security patch:2020-01-05)
+    ALPS04926269		[Google Security Patch][CVE-2020-0008]ID Vulnerability in Bluetooth
+    ALPS04872530		"切换AP,高概率出现设备重启
+    Sotp softap and start it immediately, system will restart"
+    ALPS04918486		[Google Security Patch][CVE-2019-2218]EoP Vulnerability in Package installer
+    ALPS04907485		"關閉MT8167 brom uart download
+    disable brom uart download for mt8167 platform"
+    ALPS04928958		[Google Security Patch][CVE-2020-0004]DoS Vulnerability in Wallpaper
+    ALPS04912879		"camera  preview memory leak
+    camera mm leak"
+    ALPS04927549		[Google Security Patch][CVE-2019-2219]ID Vulnerability in System UI
+    ALPS04928082		[Google Security Patch][CVE-2020-0007]ID Vulnerability in Sensor
+    ALPS04918167		[Google Security Patch][CVE-2020-0009]EoP Vulnerability in ashmem (Device Specific)
+    ALPS04926776		[Google Security Patch][CVE-2020-0006]ID Vulnerability in NFC
+    ALPS04919335		[Google Security Patch][CVE-2019-15214]EoP Vulnerability in Sound subsystem (Device Specific)
+    ALPS04926884		[Google Security Patch][CVE-2018-20856]EoP Vulnerability in Kernel (Device Specific)
+    ALPS04920387		[Google Security Patch][CVE-2019-2204]RCE Vulnerability in libpac (v8)
+    ALPS04920527		[Google Security Patch][CVE-2020-0001]EoP Vulnerability in ActivityManager
+    ALPS04930118		[Google Security Patch][CVE-2020-0002]RCE Vulnerability in libavcdec
+    ALPS04922929		[Google Security Patch][CVE-2019-2208]ID Vulnerability in libpac
+    ALPS04927129		[Google Security Patch][CVE-2020-0007]ID Vulnerability in Sensor
+    ALPS04931649		[Google Security Patch]Update Security Patch Level to 2020-01-05
+    ALPS04894334		Optimizate boot time
+    ALPS04936838		[Google Security Patch][CVE-2019-11599]EoP Vulnerability in Memory Map Subsystem (Device Specific)
+    ALPS04427107		Enable MTK_LOWRAM_CHECK for 512MB/1GB device.
+    
+    CodeNo: dongming@20200108091136
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.219 (Security patch: 2019-11-05)
+    ALPS04828567		[Google Security Patch][CVE-2019-2201]RCE Vulnerability in libjpeg-turbo
+    ALPS04843473		[Google Security Patch]Update Security Patch Level to 2019-11-05
+    ALPS04834019		[Google Security Patch][CVE-2019-2205]RCE Vulnerability in libpac
+    ALPS04839582		[Google Security Patch][CVE-2019-2213]EoP Vulnerability in binder driver (Device Specific)
+    ALPS04831276		[Google Security Patch][CVE-2019-2197]ID Vulnerability in Bluetooth
+    ALPS04828072		[Google Security Patch][CVE-2019-2207]EoP Vulnerability in NFC
+    ALPS04818871		[wlan] wifi can't connect to AP anymore after disconnecting.
+    ALPS04824458		[Google Security Patch][CVE-2019-2211]ID Vulnerability in TvProvider
+    ALPS04810520		[Google Security Advisory]Security Vulnerability - Partner Security Advisory - 2019-08 (Binder use-after-free)
+    ALPS04828965		[Google Security Patch][CVE-2019-2193]EoP Vulnerability in Setup Wizard
+    ALPS04825564		[Google Security Patch][CVE-2019-2195]EoP Vulnerability in Sqlite3
+    ALPS04830374		[Google Security Patch][CVE-2019-2117]ID Vulnerability in Telephony Provider
+    ALPS04822645		memory optimization for media.codec
+    ALPS04828048		[Google Security Patch][CVE-2019-2206]EoP Vulnerability in NFC
+    ALPS04656199		[Google Security Patch][CVE-2019-2117]ID Vulnerability in Telephony Provider
+    ALPS04827781		[Google Security Patch][CVE-2019-2214]EoP Vulnerability in binder driver (Device Specific)
+    ALPS04828066		[Google Security Patch][CVE-2019-2196]ID Vulnerability in Download Provider
+    ALPS04820043		Vulnerability in Bluetooth(CVE-2019-2209)
+    ALPS04837174		[Google Security Patch][CVE-2019-2198]ID Vulnerability in Download Provider
+    ALPS04838487		[Google Security Patch][CVE-2019-2212]ID Vulnerability in libc++
+    ALPS04790374		update 7668 FW to Mp2.3
+    ALPS04810513		[Google Security Advisory]Security Vulnerability - Partner Security Advisory - 2019-08 (Binder use-after-free)
+    ALPS04817253		[Google Security Patch][CVE-2019-2203]EoP Vulnerability in clearkey
+    ALPS04823157		[Google Security Patch][CVE-2019-11833]ID Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04828448		[Google Security Patch][CVE-2019-2036]EoP Vulnerability in Bluetooth
+    ALPS04427107		Enable MTK_LOWRAM_CHECK for 512MB/1GB device.
+    
+    CodeNo: dongming@20191108083603
+
+
+    Revert "[st18c10bnnxx]<string name="config_defaultAssistantComponentName"></string>"
+    
+
+
+    Revert "[st18c10bnnxx]调整最大亮度"
+    
+
+
+    [st18c10bnnxx]<string name="config_defaultAssistantComponentName"></string>
+
+
+    [st18c10bnnxx]修改版本号
+
+
+    [st18c10bnnxx][gts]com.google.android.gts.devicepolicy.managedprovisioning.DeviceOwnerProvisioningHostsideTest#testRequiredAppsInManagedProfileForManagedDevice
+    补丁编码:angle.luo@191122033659
+
+
+    [st18c10bnnxx]调整最大亮度
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.214 (security patch: 2019-10-05)
+    ALPS04783578		[Google Security Patch][CVE-2019-2114]EoP Vulnerability in NFC
+    ALPS04717488		mediaserver crash
+    ALPS04781949		Fix parameter error when verifying SIM PIN2
+    ALPS04783436		"flash screen设置时禁止google assist的白色圆球动画效果
+    Disable OPA edge flash animation"
+    ALPS04784289		Fix parameter error when verifying SIM PIN2
+    ALPS04789064		[Google Security Patch][CVE-2019-2185]RCE Vulnerability in libstagefright_m4vh263dec
+    ALPS04784873		mtk.omxvenc.input.scaling
+    ALPS04778824		[Google Security Patch][CVE-2019-2173]EoP Vulnerability in Activity manager
+    ALPS04789063		[Google Security Patch][CVE-2019-2184]RCE Vulnerability in libstagefright
+    ALPS04790693		[Google Security Patch]Update Security Patch Level to 2019-10-05
+    ALPS04755365		Add Special Mesh message params config feature
+    ALPS04784596		[Google Security Patch][CVE-2019-2187]ID Vulnerability in NFC
+    ALPS04785488		[Google Security Patch][CVE-2018-19824]EoP Vulnerability in USB audio (Device Specific)
+    ALPS04767793		"HEVC decoder 720x1280影片問題
+    HEVC decoder 720x1280 isue"
+    ALPS04742264		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04746740		[Google Security Patch][CVE-2019-2174]EoP Vulnerability in libsensor
+    ALPS04738690		[Google Security Patch][CVE-2019-2115]EoP Vulnerability in libgatekeeper
+    ALPS04741851		"系统裁剪
+    for system slim feature"
+    ALPS04724896		[Internal Fuzzer]Security Vulnerability in com.mediatek.ims app that leaks incoming VoLTE, WFC, ViLTE call's phone number to 3rd-party apps
+    ALPS04739822		[Google Security Patch][CVE-2019-2177]RCE Vulnerability in Bluetooth
+    ALPS04742811		[Google Security Patch][CVE-2019-2178]EoP Vulnerability in NFC server
+    ALPS04726486		[Internal Fuzzer]Security Vulnerability in com.mediatek.voicecommand that exports VoiceCommandManagerService to 3rd-party apps on device
+    ALPS04746538		[Google Security Patch][CVE-2019-2180]ID Vulnerability in libcups
+    ALPS04742794		[Google Security Patch][CVE-2019-2179]ID Vulnerability in NFC
+    ALPS04753926		[Google Security Patch]Update Security Patch Level to 2019-09-05
+    ALPS04742006		[Google Security Patch][CVE-2019-2123]EoP Vulnerability in Binder
+    ALPS04713979		[Makefile] [Add: Feature Option][Option Name: MTK_VDEC_LOW_LANTENCY_SUPPORT] CKRQ-00019594
+    ALPS04748318		[Google Security Patch][CVE-2019-2124]ID Vulnerability in AOSP Mail
+    ALPS04695801		[Google Security Patch][CVE-2019-2036]EoP Vulnerability in Bluetooth
+    ALPS04746443		[Internal Fuzzer]Security Vulnerability in com.mediatek.omacp app that leaks sensitive provisioning data to 3rd-party apps on device
+    ALPS04714420		"更改创先opp table 方式
+    Change the way to create opp table"
+    ALPS04744824		[Google Security Patch][CVE-2019-2176]RCE Vulnerability in libhevc
+    ALPS04343645		reserved secure mem for svp
+    ALPS04760166		fix image sensor reset pin gpio setting
+    ALPS04609703		"WIFI校准需求
+    Feature request for wifi calibration"
+    ALPS04745959		[Google Security Patch][CVE-2019-2181]EoP Vulnerability in binder driver (Device Specific)
+    
+    CodeNo: dongming.li@20190930153438
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.205 (Security patch: 2019-08-05)
+    ALPS04708882		[External Feedback]Security Vulnerability in emmc driver of meta mode
+    ALPS04682399		[External Feedback]Security Vulnerability in exported WfoService that can be used to modify the "persist.vendor.mtk.wfc.mccmnc_list" system property
+    ALPS04687278		[Google Security Patch][CVE-2019-2120]EoP Vulnerability in dex2oat
+    ALPS04694774		[Google Security Patch][CVE-2019-2126]RCE Vulnerability in libwebm
+    ALPS04694138		[Google Security Patch][CVE-2019-9506]ID Vulnerability in Bluetooth firmware
+    ALPS04689633		[Google Security Patch][CVE-2019-2135]ID Vulnerability in NFC
+    ALPS04689659		[Google Security Patch][CVE-2019-2133]EoP Vulnerability in NFC
+    ALPS04689997		[Google Security Patch][CVE-2017-13279]DoS Vulnerability in libstagefright
+    ALPS04695477		[Google Security Patch][CVE-2018-9350]DoS Vulnerability in libavc
+    ALPS04701033		[Google Security Patch][CVE-2019-2122]EoP Vulnerability in WindowManager
+    ALPS04695801		[Google Security Patch][CVE-2019-2036]EoP Vulnerability in Bluetooth
+    ALPS04690120		[Google Security Patch][CVE-2019-2132]EoP Vulnerability in VPN dialog
+    ALPS04691683		[Google Security Patch][CVE-2017-13177]RCE Vulnerability in libhevc
+    ALPS04691404		[Google Security Patch][CVE-2019-2131]EoP Vulnerability in App notification settings
+    ALPS04690675		3rd part OpenCL app could not run
+    ALPS04695567		[Google Security Patch][CVE-2019-2136]ID Vulnerability in Binder
+    ALPS04695952		[Google Security Patch][CVE-2019-2130]RCE Vulnerability in pacprocessor
+    ALPS04682858		enable tsvc for hybrid encode
+    ALPS04694205		[Google Security Patch][CVE-2019-2127]EoP Vulnerability in audioserver
+    ALPS04691254		[Google Security Patch][CVE-2019-2129]ID Vulnerability in libstagefright
+    ALPS04698077		[Internal Fuzzer]Security Vulnerability - IMS: remove sensitive logs in user load
+    ALPS04700529		"nand驱动不恰当的处理导致开机失败
+    Nand driver inappropriate handling lead to boot up fail"
+    ALPS04690230		[Internal Fuzzer]Security Vulnerability - IMS: remove sensitive logs in user load
+    ALPS04428090		Add chip reset flow
+    ALPS04690413		[Google Security Patch][CVE-2019-2125]EoP Vulnerability in Dialer Settings
+    ALPS04691629		[Google Security Patch][CVE-2019-2122]EoP Vulnerability in WindowManager
+    ALPS04686486		[Google Security Patch][CVE-2019-2128]EoP Vulnerability in libstagefright
+    ALPS04689614		[Google Security Patch][CVE-2019-2134]EoP Vulnerability in NFC
+    ALPS04697580		[Google Security Patch]Update Security Patch Level to 2019-08-05
+    
+    CodeNo: dongming@20190731172942
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.200 (Security patch: 2019-07-05)
+    ALPS04665224		[Google Security Patch]Update Security Patch Level to 2019-07-05
+    ALPS04659985		[Google Security Patch][CVE-2019-2106]RCE Vulnerability in libhevc
+    ALPS04658385		[Google Security Patch][CVE-2019-2109]RCE Vulnerability in AVIExtractor
+    ALPS04653269		[Google Security Patch][CVE-2019-2104]ID Vulnerability in Framework
+    ALPS04659665		[Google Security Patch][CVE-2019-2107]RCE Vulnerability in libhevc
+    ALPS04425599		Modify the release BRM for liboemcrypto_static library.
+    ALPS04656663		[Google Security Patch][CVE-2019-2116]ID Vulnerability in Bluetooth
+    ALPS04587862		The platform will auto restart after click the power key several times quickly with HDMI cable
+    ALPS04659061		[Google Security Patch][CVE-2019-2118]ID Vulnerability in hwbinder
+    ALPS04656199		[Google Security Patch][CVE-2019-2117]ID Vulnerability in Telephony Provider
+    ALPS04654742		[Google Security Patch][CVE-2019-2115]EoP Vulnerability in libgatekeeper
+    ALPS04653188		[Google Security Patch][CVE-2019-2114]EoP Vulnerability in NFC
+    ALPS04659830		[Google Security Patch][CVE-2019-2108]RCE Vulnerability in libhevc
+    ALPS04656524		[Google Security Patch][CVE-2019-2119]ID Vulnerability in Keystore
+    ALPS04178959		"当监测到 7668 chip 异常时做chip reset
+    7668 chip reset when BT/Wifi fw abnormal"
+    ALPS04658515		[Google Security Patch][CVE-2019-2112]EoP Vulnerability in Bluetooth
+    ALPS04631627		[External Feedback]Security Vulnerability - Remove running "setenforce 0" command in factory code
+    ALPS04651110		[Google Security Patch][CVE-2019-2105]RCE Vulnerability in sfntly
+    
+    CodeNo: dongming@20190701155001
+
+
+    [common][mtk-patch] alps-mp-o1.mp5-V2.194(Security patch: 2019-06-05)
+    ALPS04437809		[Google Security Patch][CVE-2019-2092]EoP Vulnerability in DevicePolicyManagerService
+    ALPS04440798		[Google Security Patch][CVE-2019-2101]ID Vulnerability in UVC driver (Device Specific)
+    ALPS04477350		[Google Security Patch]Update Security Patch Level to 2019-06-05
+    ALPS04471218		[Google Security Patch][CVE-2019-2099]EoP Vulnerability in NFC
+    ALPS04440241		[Google Security Patch][CVE-2019-2100]ID Vulnerability in Bluetooth firmware
+    ALPS04449065		[Google Security Patch][CVE-2019-2094]RCE Vulnerability in libmediaplayerservice
+    ALPS04433620		[Google Security Patch][CVE-2019-2091]EoP Vulnerability in DevicePolicyManagerService
+    ALPS04172569		Keep wifi on during sleep
+    ALPS04448983		[Google Security Patch][CVE-2019-2090]EoP Vulnerability in PackageManagerService
+    ALPS04410910		performance improvement
+    ALPS04457870		[Google Security Patch][CVE-2019-2102]EoP Vulnerability in Bluetooth
+    ALPS04462250		[Google Security Patch][CVE-2019-2096]EoP Vulnerability in Audioserver
+    ALPS04240685		"user版本第一次开机不插USB线,后面再插会弹不出usb notification
+    remove some duplicated logic"
+    ALPS04462504		[Google Security Patch][CVE-2018-9526]ID Vulnerability in GnssLocationProvider
+    ALPS04455569		[Google Security Patch][CVE-2019-2096]EoP Vulnerability in Audioserver
+    ALPS04449548		[Google Security Patch][CVE-2019-2097]RCE Vulnerability in libpac
+    ALPS04461086		[Google Security Patch][CVE-2019-2098]EoP Vulnerability in NotificationManagerService
+    ALPS04422912		"CTS-Verify  BluetoothSecure Client/Server Test fail, in 6630
+    CTS-Verify  BluetoothSecure Client/Server Test fail"
+    ALPS04449377		Fix Google security cause BT command timeout issue
+    ALPS04411152		Fix a2dp choppying in mesh standby mode
+    ALPS04427107		Enable MTK_LOWRAM_CHECK for 512MB/1GB device.
+    
+    CodeNo: dongming@20190604163153
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.187 (Security patch: 2019-05-05)
+    ALPS04384296		[Google Security Patch][CVE-2019-2053]ID Vulnerability in wpa_supplicant_8
+    ALPS04387547		[Google Security Patch][CVE-2019-2051]ID Vulnerability in libpac
+    ALPS04381939		update wifi firmware
+    ALPS04387848		[Google Security Patch][CVE-2019-2052]ID Vulnerability in pacprocessor
+    ALPS04387783		"SD卡内容无法加载
+    can't enter SD card"
+    ALPS04387437		[Google Security Patch][CVE-2018-9526]ID Vulnerability in GnssLocationProvider
+    ALPS04361658		fix reboot issue cause by sdio timeout
+    ALPS04387161		[Google Security Patch][CVE-2019-2047]RCE Vulnerability in pacprocessor
+    ALPS04409577		"update 7668 fw patch
+    update 7668 fw patch"
+    ALPS04384144		[Google Security Patch][CVE-2019-2043]EoP Vulnerability in SMS Settings
+    ALPS04385730		[Google Security Patch][CVE-2019-2045]RCE Vulnerability in pacprocessor
+    ALPS04381968		hfp client no ringtone
+    ALPS04384269		[Google Security Patch][CVE-2019-2050]EoP Vulnerability in WiFi server
+    ALPS04386383		[Google Security Patch][CVE-2019-2046]RCE Vulnerability in pacprocessor
+    ALPS04384905		[Google Security Patch][CVE-2019-2044]RCE Vulnerability in RTSP codec
+    ALPS04394313		[Google Security Patch]Update Security Patch Level to 2019-05-05
+    ALPS04423418		[External Feedback]Security Vulnerability in CMDQ driver that may allow attackers to get root privilege under certain conditions
+    ALPS04423382		[External Feedback]Security Vulnerability in CMDQ driver that may allow attackers to get root privilege under certain conditions
+    ALPS04400853		"添加铃声出现android.process.media已停止运行
+    android.process.media je"
+    ALPS04386096		[External Feedback]Security Vulnerability in mnld daemon
+    ALPS04383504		[Google Security Patch][CVE-2019-2054]EoP Vulnerability in seccomp (Device Specific)
+    
+    补丁编码: dongming@20190510103013
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.174 (Security patch: 2019-04-05)
+    ALPS04345128		[Google Security Patch][CVE-2019-2031]EoP Vulnerability in NFC
+    ALPS04357779		Modify 6630 BT TX power level default value
+    ALPS04346840		[Google Security Patch][CVE-2019-2035]EoP Vulnerability in NFC
+    ALPS04353377		[Google Security Patch]Update Security Patch Level to 2019-04-05
+    ALPS04347024		[Google Security Patch][CVE-2019-2039]ID Vulnerability in NFC
+    ALPS04331560		[Google Security Patch][CVE-2019-2037]ID Vulnerability in Bluetooth
+    ALPS04345320		fix mesh provision fail issue
+    ALPS04326318		[Google Security Patch][CVE-2019-2027]RCE Vulnerability in Vorbis Decoder Tremolo
+    ALPS04338457		[Google Security Patch][CVE-2019-2032]EoP Vulnerability in Bluetooth
+    ALPS04346714		[Google Security Patch][CVE-2019-2034]EoP Vulnerability in NFC
+    ALPS04239167		wfd can not display sucessfully
+    ALPS04361382		[External Feedback]Security Vulnerability - ARM potential privilege escalation through mis-configured debug signals
+    ALPS04338733		[Google Security Patch][CVE-2019-2029]RCE Vulnerability in Bluetooth
+    ALPS04347207		[Google Security Patch][CVE-2019-2038]ID Vulnerability in NFC
+    ALPS04333714		[Google Security Patch][CVE-2019-2036]EoP Vulnerability in Bluetooth
+    ALPS04338245		[Google Security Patch][CVE-2019-2028]RCE Vulnerability in libmpeg2
+    
+    补丁编码: dongming@20190408092006
+
+
+    [common]t-alps-mp-o1.mp5-V2.168 漏提交vendor/mediatek/proprietary/hardware/libmiravision_feature 部分
+    补丁编码: dongming@20190401191846
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.168 (Security patch: 2019-03-05)
+    ALPS04306769		phaseout useless ProjectConfig: MTK_DMNR_TUNING_AT_MD
+    ALPS04297788		[Google Security Patch][CVE-2019-2008]EoP Vulnerability in audioserver
+    ALPS04308289		[Google Security Patch][CVE-2019-1989]RCE Vulnerability in libavc
+    ALPS04307450		[Google Security Patch][CVE-2019-2021]ID Vulnerability in NFC
+    ALPS04300940		[Google Security Patch][CVE-2019-2005]EoP Vulnerability in Package installer
+    ALPS04303414		[Google Security Patch][CVE-2018-13917]Vulnerability in WIN NSS Host (Device Specific)
+    ALPS04296740		[Google Security Patch][CVE-2018-9526]ID Vulnerability in Location API
+    ALPS04306806		[Google Security Patch][CVE-2019-2015]EoP Vulnerability in NFC
+    ALPS04303232		[Google Security Patch][CVE-2019-2003]EoP Vulnerability in Text rendering
+    ALPS04299021		[Google Security Patch][CVE-2018-20346]EoP Vulnerability in SQLite
+    ALPS04302596		[Google Security Patch][CVE-2019-2018]EoP Vulnerability in Factory reset protection
+    ALPS04298237		[Google Security Patch][CVE-2019-2007]EoP Vulnerability in AAudio
+    ALPS04307048		[Google Security Patch][CVE-2019-2017]EoP Vulnerability in NFC
+    ALPS04314612		[Google Security Patch]Update Security Patch Level to 2019-03-05
+    ALPS04298942		[Google Security Patch][CVE-2019-1990]RCE Vulnerability in libhevc
+    ALPS04304958		[Google Security Patch][CVE-2019-2023]EoP Vulnerability in hwservicemanager
+    ALPS04307144		[Google Security Patch][CVE-2019-2019]ID Vulnerability in NFC
+    ALPS04306612		[Google Security Patch][CVE-2019-2014]EoP Vulnerability in NFC
+    ALPS04298868		[Google Security Patch][CVE-2019-2004]ID Vulnerability in libinput
+    ALPS04307425		[Google Security Patch][CVE-2019-2020]ID Vulnerability in NFC
+    ALPS04305435		[Google Security Patch][CVE-2018-9561][CVE-2018-9563][CVE-2018-9564]ID Vulnerability in NFC
+    ALPS04305368		[Google Security Patch][CVE-2019-2023]EoP Vulnerability in hwservicemanager
+    ALPS04306199		[Google Security Patch][CVE-2019-2012][CVE-2019-2013][CVE-2019-2022]EoP/ID Vulnerability in NFC
+    ALPS04285934		Ble Mesh Params config feature
+    ALPS04279972		[Google Security Patch]Security Vulnerability in thermal manager (Device Specific)
+    ALPS04297982		[Google Security Patch][CVE-2019-2011]EoP Vulnerability in libhwbinder
+    ALPS04297849		[Google Security Patch][CVE-2019-2025]EoP Vulnerability in Binder driver (Device Specific)
+    ALPS04301641		[Google Security Patch][CVE-2018-10883]EoP Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04301777		[Google Security Patch][CVE-2019-2009]RCE Vulnerability in Bluetooth
+    ALPS04306092		[Google Security Patch][CVE-2019-2010]EoP Vulnerability in NFC
+    ALPS04306985		[Google Security Patch][CVE-2019-2016]EoP Vulnerability in NFC
+    
+    补丁编码: dongming@20190314161733
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.158 (Security patch:2019-02-05)
+    ALPS04262738		[Google Security Patch][CVE-2019-2000]EoP Vulnerability in Binder driver (Device Specific)
+    ALPS04271728		[Google Security Patch][CVE-2019-1995]ID Vulnerability in AOSP Mail
+    ALPS04262735		[Google Security Patch][CVE-2018-10879]EoP Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04262736		[Google Security Patch][CVE-2019-1999]EoP Vulnerability in Binder driver (Device Specific)
+    ALPS04253764		BT MAC init
+    ALPS04264652		[AIV8167S][O1][HFP] HFP call out, voice can't output from DUT
+    ALPS04260912		[Google Security Patch][CVE-2019-1991]RCE Vulnerability in Bluetooth
+    ALPS04260910		[Google Security Patch][CVE-2019-1988]RCE Vulnerability in skia
+    ALPS04264003		[AIV8167S][O1][HFP] HFP calling in, wait about 2 minutes, voice can't output from DUT
+    ALPS04260916		[Google Security Patch][CVE-2019-1994]EoP Vulnerability in Quicksetting tiles
+    ALPS04260917		[Google Security Patch][CVE-2019-1995]ID Vulnerability in AOSP Mail
+    ALPS04260914		[Google Security Patch][CVE-2019-1992]RCE Vulnerability in Bluetooth
+    ALPS04260915		[Google Security Patch][CVE-2019-1993]EoP Vulnerability in Bluetooth
+    ALPS04260918		[Google Security Patch][CVE-2019-1996]ID Vulnerability in Bluetooth
+    ALPS04264160		Fix vulnerabilities in keymaster
+    ALPS04262741		[Google Security Patch][CVE-2019-2001]EoP Vulnerability in iomem (Device Specific)
+    ALPS04255902		ext4: fix check to prevent initializing reserved inodes
+    ALPS04180288		"A-GPS RRLP/RRC R9 协议缺陷（GPS周翻转问题）导致定位时间延长或定位失败
+    A-GPS RRLP/RRC R9 Protocol defects(WeekNo Rollover issue) leading positioning time extended or unable to be located"
+    ALPS04251501		update BT FW
+    ALPS04260909		[Google Security Patch][CVE-2019-1987]RCE Vulnerability in skia
+    ALPS04270300		[HFP] playback local music, call in and answer, change to music UI, audio server will crash
+    ALPS04250163		Sync CarBTDemo source code from o1.mp9
+    ALPS04262742		[Google Security Patch]Update Security Patch Level to 2019-02-05
+    ALPS04285934		Ble Mesh Params config feature
+    ALPS04260920		[Google Security Patch][CVE-2019-1997]ID Vulnerability in WPA supplicant
+    
+    m
+    补丁编码: dongming@20190218120203
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.135 (security patch:2019-01-05)
+    ALPS04210762		"securiyt related
+    security related"
+    ALPS04224689		[Google Security Patch][CVE-2018-9585]EoP Vulnerability in NFC
+    ALPS04224681		[Google Security Patch][CVE-2018-18281]EoP Vulnerability in TLB (Device Specific)
+    ALPS04224686		[Google Security Patch][CVE-2018-9584]EoP Vulnerability in NFC
+    ALPS04224684		[Google Security Patch][CVE-2018-9582]EoP Vulnerability in PackageInstaller
+    ALPS04229143		[Makefile] [Remove: Feature Option][Option Name: LOVELYFONTS_ICON_SHOW] CKRQ-00017233
+    ALPS04214650		[Keystore][VTS/CTS/GTS] Key attestation test cases fail
+    ALPS04224719		[Google Security Patch]Update Security Patch Level to 2019-01-05
+    ALPS04224678		[Google Security Patch][CVE-2018-17182]EoP Vulnerability in Memory Manager (Device Specific)
+    ALPS04229139		[Makefile] [Remove: Feature Option][Option Name: MTK_YIQI_FONTS_FRAMEWORK_SUPPORT] CKRQ-00017231
+    ALPS04224685		[Google Security Patch][CVE-2018-9583]RCE Vulnerability in Bluetooth
+    ALPS04224672		[Google Security Patch][CVE-2018-11962]Security Vulnerability in Audio
+    ALPS04224671		[Google Security Patch][CVE-2018-10882]EoP Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04178959		"当监测到 7668 chip 异常时做chip reset
+    7668 chip reset when BT/Wifi fw abnormal"
+    ALPS04224716		[Google Security Patch][CVE-2018-9594]ID Vulnerability in NFC
+    ALPS04224674		[Google Security Patch][CVE-2018-13405]EoP Vulnerability in Filesystem (Device Specific)
+    ALPS04229281		Bluetooth crash when bt connection
+    ALPS04180288		GPS WeekNo Rollover issue
+    ALPS04226747		Enable MSDC DMA mode in LK
+    ALPS04229141		[Makefile] [Remove: Feature Option][Option Name: LOVELYFONTS_SUPPORT] CKRQ-00017232
+    ALPS04245911		Auto reconnect when we are in SINK role
+    ALPS04224694		[Google Security Patch][CVE-2018-9587]EoP Vulnerability in Contacts
+    ALPS04224697		[Google Security Patch][CVE-2018-9588]ID Vulnerability in Bluetooth
+    ALPS04224691		[Google Security Patch][CVE-2018-9586]EoP Vulnerability in ManagedProvisioning
+    ALPS04224711		[Google Security Patch][CVE-2018-9593]ID Vulnerability in NFC
+    ALPS04224699		[Google Security Patch][CVE-2018-9589]ID Vulnerability in WiFi driver
+    ALPS04224662		[Google Security Patch][CVE-2018-10876]EoP Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04240565		Update latest gpu vendor formal patch
+    ALPS04203675		Fix WIFI temperature type define error
+    ALPS04224668		[Google Security Patch][CVE-2018-10880]EoP Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04240372		update BT FW
+    ALPS04224666		[Google Security Patch][CVE-2018-10877]ID Vulnerability in ext4 filesystem (Device Specific)
+    ALPS04172179		Can't erase system and download GSI in fastboot mode.
+    ALPS04224703		[Google Security Patch][CVE-2018-9591]ID Vulnerability in Bluetooth
+    ALPS04224701		[Google Security Patch][CVE-2018-9590]ID Vulnerability in Bluetooth
+    ALPS04224705		[Google Security Patch][CVE-2018-9592]ID Vulnerability in Bluetooth
+    
+    补丁编码: dongming@20190104172859
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.116 (Securtiry patch: 2018-12-05)
+    ALPS04183610		[Google Security Patch][CVE-2018-9555]RCE Vulnerability in Bluetooth
+    ALPS04180055		[Google Security Patch]Widevine issue: Netflix cannot enable secure stop
+    ALPS04181003		"改善ActivityManagerInternal.startIsolatedProcess.
+    Improve ActivityManagerInternal.startIsolatedProcess."
+    ALPS04183628		[Google Security Patch]Update Security Patch Level to 2018-12-05
+    ALPS04210804		multi-thread issue in smi/ion
+    ALPS04183622		[Google Security Patch][CVE-2018-9561][CVE-2018-9563][CVE-2018-9564]ID Vulnerability in NFC
+    ALPS04183606		[Google Security Patch][CVE-2018-9553]RCE Vulnerability in libmkvextractor
+    ALPS04183607		[Google Security Patch][CVE-2018-9554]ID Vulnerability in MediaExtractor
+    ALPS04183626		[Google Security Patch][CVE-2018-9566]ID Vulnerability in Bluetooth
+    ALPS04183602		[Google Security Patch][CVE-2018-9552]ID Vulnerability in libhevc
+    ALPS04188606		KE with CMW270
+    ALPS04188173		"修改记录应用启动时间
+    Fix issues with TRON app transition logging"
+    ALPS04178959		"当监测到 7668 chip 异常时做chip reset
+    7668 chip reset when BT/Wifi fw abnormal"
+    ALPS04212663		enhance hang detect method.
+    ALPS04180288		GPS WeekNo Rollover issue
+    ALPS04165409		camera record occurred mosaic
+    ALPS00458646		Update information for internal regular release
+    ALPS04102200		thermal: mt8167: Improve power performance
+    ALPS04183599		[Google Security Patch][CVE-2018-9549]RCE Vulnerability in libSBRdec
+    ALPS04183619		[Google Security Patch][CVE-2018-9559]EoP Vulnerability in vold
+    ALPS04183594		[Google Security Patch][CVE-2018-9547]EoP Vulnerability in System server
+    ALPS04183596		[Google Security Patch][CVE-2018-9548]ID Vulnerability in Content provider
+    ALPS04183590		[Google Security Patch][CVE-2018-9526]ID Vulnerability in Location provider
+    ALPS04142432		"Google Patch, 用来去除重复的dependency
+    Google Patch for removing more duplicated flags and dependencies"
+    ALPS04183593		[Google Security Patch][CVE-2018-9543]ID Vulnerability in libf2fs
+    ALPS04183617		[Google Security Patch][CVE-2018-9558]EoP Vulnerability in NFC
+    ALPS04078317		For Mesh Feature update
+    ALPS04169333		"修复8176烧key问题
+    fix 8176 install key issue"
+    
+    补丁编码: dongming@20181207101455
+
+
+    [common][mtk-patch]t-alps-mp-o1.mp5-V2.99
+    ALPS04163258		Fix GPU draw error
+    ALPS04151314		video display is abnormal
+    ALPS04177537		fix CTS test fail
+    ALPS04164285		Fix mesh provisioning fail problem
+    ALPS04180147		"解决横屏模式下 testConfigurationChangeOrderDuringTransition 测试fail问题
+    fix landscape mode testConfigurationChangeOrderDuringTransition cts test fail"
+    ALPS03879438		ov5645 sensor porting
+    ALPS04174889		[Project Configuration][Create Project] customer create project tool for common git
+    ALPS04167650		"对于instant apk Don't access keyguard
+    Don't access keyguard from instant apps."
+    ALPS04177678		"GSI Loader编译失败
+    fix build fail of gsi loader"
+    ALPS04169486		"对于instant apk，Don't access keyguard from instant apps.
+    Don't access keyguard from instant apps."
+    ALPS00458646		Update information for internal regular release
+    ALPS04163225		fixing bug: 4K monitor get blank screen when connected trough HDMI cable
+    ALPS04167662		[GMS Express][TB8167P3_BSP][O1][6.0_r2 / 5069183]GtsPackageManagerHostTestCases--com.google.android.pm.gts.PackageManagerHostTest#testMediaProjection(5/5)
+    ALPS04078317		For Mesh Feature update
+    ALPS04169479		"[Keymaster][Key Attestation] 优化解析和读取Attestation Key File的方法
+    [Keymaster][Key Attestation] Optimize the method of parsing and reading attestation key file"
+    
+    补丁编码: dongming@20181109153705
+
+
+    [common]add miss .o files
+    补丁编码: dongming@20181029144630
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.94 (Update Security Patch Level to 2018-11-05)
+    ALPS04142823		[Google Security Patch][CVE-2018-9527]RCE Vulnerability in tremolo
+    ALPS04142840		[Google Security Patch][CVE-2018-9540]ID Vulnerability in Bluetooth
+    ALPS04142843		[Google Security Patch][CVE-2018-9541][CVE-2018-9542]ID Vulnerability in Bluetooth
+    ALPS04148745		Fix VtsHalWifiSupplicantV1_0Target test fail of MT7668
+    ALPS04150133		"使用55k SRAMROM来给audio抓数据从而进入deepdile&SODI
+    reuse 55k SRAMROM feature for both SODI and deepidle to save power
+    reuse 55k SRAMROM feature for both SODI and deepidle to save power
+    reuse 55k SRAMROM feature for both SODI and deepidle to save power"
+    ALPS04136117		Fix GL memory statistic error
+    ALPS04155479		"CallRecorderService无使用权限，第三方应用可通过Ibinder调用此服务进行录音，存在安全隐患
+    CallRecorderService sensitive function exposed"
+    ALPS04126354		"CTS8.1_r8 android.security.cts.Poc17_03#testPocCVE_2017_0521 測試失敗
+    CTS8.1_r8 android.security.cts.Poc17_03#testPocCVE_2017_0521 failed"
+    ALPS04142838		[Google Security Patch][CVE-2018-9539]EoP Vulnerability in ClearKey CAS
+    ALPS04078464		"KB/DKB需要被FlashTool保护
+    KB/DKB need protected by Flashtool"
+    ALPS04156270		Lovelyfont apk pre-load issue
+    ALPS04142813		[Google Security Patch][CVE-2018-9523]EoP Vulnerability in NavigableSubMap
+    ALPS04147944		camera: mt8167: fix vts fail
+    ALPS04142874		[Google Security Patch]Update Security Patch Level to 2018-11-05
+    ALPS04157599		dsi: adjust PHY timing parameter
+    ALPS00458646		Update information for internal regular release
+    ALPS04136206		"当interface同时获得IPv6和IPv4地址时，优先查询IPv6 DNS
+    Give IPv6 DNS server high search priority when both IPv4 and IPv6 address are provided."
+    ALPS04142815		[Google Security Patch][CVE-2018-9524]EoP Vulnerability in System UI
+    ALPS04147689		[Google Security Patch][CVE-2016-2471]Update: EoP Vulnerability in Qualcomm Wi-Fi driver (Device Specific)
+    ALPS04144152		"更新OV5645参数解决照片偏绿的问题
+    updata ov5645 camera parameters to solve the photo green issue"
+    ALPS04142803		[Google Security Patch][CVE-2018-9347]DoS Vulnerability in sonivox
+    ALPS04078317		For Mesh Feature update
+    ALPS04142807		[Google Security Patch][CVE-2018-9457]EoP Vulnerability in Bluetooth
+    
+    补丁编码: dongming@20181026091947
+
+
+    [common]add BleMeshDemo, 解决提交无实际内容问题
+    补丁编码: dongming@20181016120738
+
+
+    [common]rm  BleMeshDemo
+      为了解决 vendor/mediatek/proprietary/packages/apps/BleMeshDemo 目录下无实际内容
+    补丁编码: dongming@20181016120202
+
+
+    [common]alps-mp-o1.mp5-V2.72 漏提交BleMeshDemo app
+    补丁编码: dongming@20181016115207
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.89
+    ALPS04047508		support debug method
+    ALPS04142901		"为autobt nsrx增加自动退出的功能
+    Add auto-exit for autobt nsrx"
+    ALPS04142438		open HDMI & close WFD
+    ALPS04133208		testPocCVE_2016_8448 failed
+    ALPS04136406		Modify 76xx vendor so and driver to vendor img
+    ALPS04132590		"PMU 中斷號不正確
+    Incorrect PMU irq numbers"
+    ALPS00458646		Update information for internal regular release
+    ALPS04108597		"优化MP3低功耗播放
+    Low power mp3 playback optimaze"
+    ALPS04134869		"使用错误的API进行Timeout Polling
+    use wrong api polling timeout in kernel"
+    
+    补丁编码: dongming@20181015212235
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.84 (Update Security Patch Level to 2018-10-05)
+    ALPS04109399		[Google Security Patch][CVE-2018-9502][CVE-2018-9503]ID Vulnerability in Bluetooth
+    ALPS04109394		[Google Security Patch][CVE-2018-9497]RCE Vulnerability in libmpeg2
+    ALPS04109395		[Google Security Patch][CVE-2018-9498]RCE Vulnerability in libskia
+    ALPS04109397		[Google Security Patch][CVE-2018-9499]ID Vulnerability in libmediadrm
+    ALPS04109390		[Google Security Patch][CVE-2018-9492]EoP Vulnerability in Activity Manager Service
+    ALPS04109391		[Google Security Patch][CVE-2018-9493]ID Vulnerability in Download Manager
+    ALPS03342098		[Google Security Patch][CVE-2017-0676]RCE Vulnerability in Media framework
+    ALPS04109409		[Google Security Patch][CVE-2018-9510]ID Vulnerability in Bluetooth
+    ALPS04126432		Revise ARM assembly function declare for kernel thumb-2 enabled
+    ALPS04109406		[Google Security Patch][CVE-2018-9508]ID Vulnerability in Bluetooth
+    ALPS04109407		[Google Security Patch][CVE-2018-9509]ID Vulnerability in Bluetooth
+    ALPS04116334		The video has noise when press Home key
+    ALPS04109388		[Google Security Patch][CVE-2018-9490]EoP Vulnerability in libpac
+    ALPS04081328		enable hdmi
+    ALPS04115711		"[CtsCameraTestCases]android.hardware.cts.CameraTest#testPreviewFpsRange fail
+    [CtsCameraTestCases]android.hardware.cts.CameraTest#testPreviewFpsRange, 1 case failed.]"
+    ALPS03780160		Remove wmt related for 7668 project
+    ALPS00458646		Update information for internal regular release
+    ALPS04129557		[Makefile] [Patchback: Feature Option] CKRQ-00016472
+    ALPS04121087		CtsSecurityTestCases--android.security.cts.StagefrightTest#testStagefright_cve_2018_9423 fail
+    ALPS04109416		[Google Security Patch]Update Security Patch Level to 2018-10-05
+    ALPS04115472		"CTS 测试失败
+    CTS fail patch"
+    ALPS04109414		[Google Security Patch][CVE-2018-9514]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04122574		fix drc gain drop issue
+    ALPS04078317		For Mesh Feature update
+    
+    补丁编码: dongming@20181009105011
+
+
+    [common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05
+    ALPS04109398		[Google Security Patch][CVE-2018-9501]EoP Vulnerability in SetupWizard
+    ALPS04109399		[Google Security Patch][CVE-2018-9502][CVE-2018-9503]ID Vulnerability in Bluetooth
+    ALPS04101422		"Google要求更改Keymaster version binding行為
+    Change keymaster version binding behavior by Google's request"
+    ALPS04109391		[Google Security Patch][CVE-2018-9493]ID Vulnerability in Download Manager
+    ALPS03879438		ov5645 sensor porting
+    ALPS04103323		"修复pinctrl debug 命令显示和操作无效的问题
+    fix pinctrl debug command show@operating invalid issue"
+    ALPS04057410		"8167使用decouple  mode
+    make 8167 platform always decouple"
+    ALPS04094568		"增加MT8167 ethernet支持
+    Add MT8167 ethernet support"
+    ALPS04102170		Add SPM 26M request API for WOL feature
+    ALPS04089702		fix some dsi issue on mt8173
+    ALPS04109400		[Google Security Patch][CVE-2018-9504]RCE Vulnerability in Bluetooth
+    ALPS04109402		[Google Security Patch][CVE-2018-9505]ID Vulnerability in Bluetooth
+    ALPS04109403		[Google Security Patch][CVE-2018-9506]ID Vulnerability in Bluetooth
+    ALPS04109405		[Google Security Patch][CVE-2018-9507]ID Vulnerability in Bluetooth
+    ALPS04077394		[Google Security Patch]Change Security Patch Level in Settings
+    ALPS04109041		"兼容Android P的make mntlimage命令
+    compatile with android p for make mntlimage"
+    ALPS04109389		[Google Security Patch][CVE-2018-9491]RCE Vulnerability in NDK
+    ALPS04077975		[Google Security Advisory]Security Vulnerability: [CVE-2018-5390] Possibility of remote denial of service
+    ALPS04109387		[Google Security Patch][CVE-2018-9476]EoP Vulnerability in Bluetooth
+    ALPS04106606		testStagefright_bug_38487564 fail
+    ALPS04109385		[Google Security Patch][CVE-2018-9452]DoS Vulnerability in Layout
+    ALPS04100722		Add notification channel in fmradio
+    ALPS04109382		[Google Security Patch][CVE-2017-13283]RCE Vulnerability in Bluetooth
+    ALPS04077990		[Google Security Advisory]Security Vulnerability: [CVE-2018-5391] Possibility of remote denial of service
+    ALPS04106966		remove no needed /proc/sysram to avoid security issue
+    ALPS04091479		fix Flashlight: Strobe and Flashlight cannot work
+    ALPS04108597		"优化MP3低功耗播放
+    Low power mp3 playback optimaze"
+    ALPS04106885		add low power support
+    ALPS04111076		"同步最新的WIFI驱动代码和固件
+    Sync the newest wifi driver and fw"
+    ALPS03778951		remove unused node
+    ALPS04109415		[Google Security Patch][CVE-2018-9515]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04109414		[Google Security Patch][CVE-2018-9514]EoP Vulnerability in sdcardfs (Device Specific)
+    ALPS04078317		For Mesh Feature update
+    ALPS04094757		android.media.cts.DecodeEditEncodeTest#testVideoEdit720p failed
+    ALPS00458646		Update information for internal regular release
+    
+    补丁编码: dongming@20180918133845
+
+
+        [ATHENA_A10 em_r101_p3mme em_r40_p3mme em_r70_p3mme em_t8811a_64mme em_t8880_32mme em_ts108_32mme em_ts108_64mme em_ts108_64mme_FHD em_ts701_archos em_ts702_32l37rde em_ts705_32mme em_ts705_32mme_800x1280 st18c10bnnxx st18c7bnn ][WIFI TX]调整WIFI TX POWER
+        补丁编码:zhenlin.zhang@20190109115130
+        注意事项:
+            根据RF 建议，为满足SAR测试要求，将WIFI 功率调整如下:
+            |-------------------------------------------------------|
+            |       |11b    CCK      1M~11M         ==>17.5         |
+            |2.4G   |               /6M~48M         ==>16           |
+            |       |11g    OFDM    \54M            ==>15           |
+            --------------------------------------------------------|
+            |       |               /MCS0~MCS6      ==>16           |
+            |2.4G   |   /   20Mhz   \MCS7           ==>14           |
+            |       |                                               |
+            | &     |11n                                            |
+            |       |               /MCS0~MCS6      ==>16           |
+            | 5G    |   \   40Mhz   \MCS7           ==>13.5         |
+            --------------------------------------------------------|
+            |       |               /6M~48M         ==>16           |
+            |       |11a    OFDM    \54M            ==>15           |
+            |       |-----------------------------------------------|
+            |       |               /MCS0~MCS6      ==>15           |
+            | 5G    |   /   20Mhz   \MCS7~MCS8      ==>13           |
+            |       |               /MCS0~MCS6      ==>15           |
+            |       |11ac-  40Mhz   \MCS7~MCS9      ==>12           |
+            |       |   \           /MCS0~MCS6      ==>15           |
+            |       |       80Mhz   \MCS7~MCS9      ==>11           |
+            |-------------------------------------------------------|
+
 
     Revert "[common][mtk-patch]alps-mp-o1.mp5-V2.79, security patch: 2018-09-05"
     
@@ -1675,6 +2363,14 @@ vvvvv
 ^^^^^
 ===== GMS ====
 vvvvv
+
+    [common] 更新GooglePackageInstaller解决CTS fail
+    补丁编码：shiqiao.li@20190523092311
+
+
+    [common]GMS 8.1_201810
+    补丁编码: dongming@20181030101213
+
 
     [common]GO版本默认添加Music2、Photos
     

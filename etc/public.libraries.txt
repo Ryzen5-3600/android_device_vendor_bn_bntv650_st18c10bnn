@@ -1,0 +1,4 @@
+libMcClient.so
+libMcRegistry.so
+libjni_subtitle_bitmap.so
+libOpenCL.so
